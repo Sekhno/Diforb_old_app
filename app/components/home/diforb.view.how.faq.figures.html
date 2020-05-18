@@ -1,0 +1,26 @@
+<div class="home-faq__triangule"><span></span><span></span></div>
+<section class="home-faq">
+	<!-- <h1>Popular questions</h1> -->
+	<v-accordion 	id="faq-accordion"
+					class="vAccordion--default"
+					control="accordion"
+					onexpand="expandCallback(index, id)"
+					oncollapse="collapseCallback(index, id)"
+					multiple>
+		<v-pane 	id="{{ ::pane.id }}"
+					ng-repeat="pane in panes"
+					expanded="pane.isExpanded">
+
+			<v-pane-header 	id="{{ ::pane.id }}-header"
+								aria-controls="{{ ::pane.id }}-header">
+				<b>Q:</b>{{ ::pane.header }}
+			</v-pane-header>
+
+			<v-pane-content 	id="{{ ::pane.id }}-content"
+								aria-labelledby="{{ ::pane.id }}-content">
+				<b>A:</b>{{ ::pane.content }}
+			</v-pane-content>
+
+		</v-pane>
+	</v-accordion>
+</section>

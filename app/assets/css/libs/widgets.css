@@ -1,0 +1,41 @@
+/*--------------------------- SliderRange ------------------------------*/
+.ui-slider {
+	position:relative;
+}
+.ui-slider .ui-slider-range {
+	position:absolute;
+	height:100%;
+}
+.ui-slider .ui-slider-handle {
+	width:20px;
+	height:20px;
+
+	border-radius:50%;
+    margin:-11px 0 0 -8px;
+
+	top:0;
+	position:absolute;
+	background: url(../../img/libs/slider_holder.svg) no-repeat;
+
+}
+.ui-slider .ui-slider-handle .ui-slider-handle-inner {
+}
+.ui-slider .ui-slider-handle .ui-slider-handle-inner span {
+}
+.ui-slider .ui-slider-handle:hover {
+}
+.ui-slider.ui-slider-vertical {
+	height:180px;
+}
+.ui-slider.ui-slider-vertical .ui-slider-range {
+	width:100%;
+	left:0;
+	bottom:0;
+	height:auto;
+}
+.ui-slider.ui-slider-vertical .ui-slider-handle {
+	top:auto;
+	left:0;
+	margin:0 0 -8px -8px;
+}
+/*--------------------------- End SliderRange end ------------------------------*/

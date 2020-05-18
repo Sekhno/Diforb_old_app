@@ -1,0 +1,38 @@
+[
+	{
+		"class": "radio-holder reverb-left-top",
+		"name": "player_reverb_left",
+		"value": "Stadium",
+		"label": "stadium"
+	},
+	{
+		"class": "radio-holder reverb-left-middle",
+		"name": "player_reverb_left",
+		"value": "Hall",
+		"label": "hall"
+	},
+	{
+		"class": "radio-holder reverb-left-bottom",
+		"name": "player_reverb_left",
+		"value": "Room",
+		"label": "room"
+	},
+	{
+		"class": "radio-holder reverb-right-top",
+		"name": "player_reverb_right",
+		"value": "Stadium",
+		"label": "stadium"
+	},
+	{
+		"class": "radio-holder reverb-right-middle",
+		"name": "player_reverb_right",
+		"value": "Hall",
+		"label": "hall"
+	},
+	{
+		"class": "radio-holder reverb-right-bottom",
+		"name": "player_reverb_right",
+		"value": "Room",
+		"label": "room"
+	}
+]

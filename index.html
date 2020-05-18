@@ -1,0 +1,248 @@
+﻿<!DOCTYPE HTML>
+<html ng-app="diforbApp">
+
+<head>
+	<meta charset="UTF-8">
+	<base href="/">
+	<title>Diforb</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Sound Effect Maker">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- LOCATION -->
+	<meta property="business:contact_data:email" content="i&#064;diforb.com" />
+	<meta property="business:contact_data:website" content="http://diforb.com" />
+	<!-- GOOGLE PLUS -->
+	<meta itemprop="name" content="Diforb"/>
+	<meta itemprop="description" content="Sound Effect Maker"/>
+	<meta itemprop="image" content="https://diforbstrg.blob.core.windows.net/img/social/google-post.jpg"/>
+	<!-- TWITTER -->
+	<meta name="twitter:card" content="summary"/>
+	<meta name="twitter:site" content="Diforb"/>
+	<meta name="twitter:title" content="Diforb">
+	<meta name="twitter:description" content="Sound Effect Maker"/>
+	<meta name="twitter:creator" content="Dmitry Sekhno"/>
+	<meta name="twitter:image:src" content="https://diforbstrg.blob.core.windows.net/img/social/google-post.jpg"/>
+	<meta name="twitter:domain" content="diforb.com"/>
+	<!-- FACEBOOK -->
+	<meta property="og:type" content="profile"/>
+	<meta property="og:title" content="Diforb"/>
+	<meta property="og:description" content="Sound Effect Maker"/>
+	<meta property="og:image" content="https://diforbstrg.blob.core.windows.net/img/social/FB-post.jpg"/>
+	<meta property="og:url" content="http://diforb.com"/>
+	<meta property="og:site_name" content="Diforb"/>
+	<meta property="og:see_also" content="http://diforb.com"/>
+
+	<!--favicons-->
+		<link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-touch-icon-152x152.png">
+		<link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="favicons/manifest.json">
+		<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="msapplication-TileImage" content="favicons/mstile-144x144.png">
+		<meta name="theme-color" content="#05a69c">
+	<!-- end favicons-->
+
+	<!--icon-->
+		<link href='https://fonts.googleapis.com/css?family=Play:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="app/assets/css/icons/Diforb_ui/style.css">
+		<link rel="stylesheet" href="app/assets/css/icons/8bit/style.css">
+		<link rel="stylesheet" href="app/assets/css/icons/Inteface/style.css">
+		<link rel="stylesheet" href="app/assets/css/icons/Destruction/style.css">
+		<link rel="stylesheet" href="app/assets/css/icons/Birds/style.css">
+		<link rel="stylesheet" href="app/assets/css/icons/Pickup/style.css">
+		<link rel="stylesheet" href="app/assets/css/icons/Falling/style.css">
+		<link rel="stylesheet" href="app/assets/css/icons/Food/style.css">
+		<link rel="stylesheet" href="app/assets/css/icons/Creatures/style.css">
+		<link rel="stylesheet" href="app/assets/css/icons/Ambience/style.css">
+		<link rel="stylesheet" href="app/assets/css/icons/Puzzle/style.css">
+		<link rel="stylesheet" href="app/assets/css/icons/Footsteps/style.css">
+		<link rel="stylesheet" href="app/assets/css/icons/CatDog/style.css">
+		<link rel="stylesheet" href="app/assets/css/icons/Zoo/style.css">
+		<link rel="stylesheet" href="app/assets/css/icons/Farms/style.css">
+		<link rel="stylesheet" href="app/assets/css/icons/Weapon/style.css">
+		<link rel="stylesheet" href="app/assets/css/icons/Explosions/style.css">
+	<!-- end icon-->
+
+	<!--stylesheet-->
+		<link href="app/assets/css/preload.css" rel="stylesheet">
+		<link href="app/assets/css/style.css" rel="stylesheet" media="screen">
+	<!--end stylesheet-->
+
+</head>
+<body diforb-controller ng-class="{ 'about': currentStateName === 'about.main','home': isHomeController}">
+
+	<!-- Google Tag Manager -->
+		<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5ZDW3G"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-5ZDW3G');</script>
+	<!-- End Google Tag Manager -->
+	<script>
+		(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-5ZDW3G');
+	</script>
+
+	<!-- Yandex.Metrika counter -->
+	<!-- <script type="text/javascript">
+	    (function (d, w, c) {
+	        (w[c] = w[c] || []).push(function() {
+	            try {
+	                w.yaCounter33035404 = new Ya.Metrika({
+	                    id:33035404,
+	                    clickmap:true,
+	                    trackLinks:true,
+	                    accurateTrackBounce:true,
+	                    webvisor:true
+	                });
+	            } catch(e) { }
+	        });
+
+	        var n = d.getElementsByTagName("script")[0],
+	            s = d.createElement("script"),
+	            f = function () { n.parentNode.insertBefore(s, n); };
+	        s.type = "text/javascript";
+	        s.async = true;
+	        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+	        if (w.opera == "[object Opera]") {
+	            d.addEventListener("DOMContentLoaded", f, false);
+	        } else { f(); }
+	    })(document, window, "yandex_metrika_callbacks");
+	</script> -->
+	<!-- <noscript>
+		<div>
+			<img src="https://mc.yandex.ru/watch/33035404" style="position:absolute; left:-9999px;" alt="" />
+		</div>
+	</noscript> -->
+	<!-- /Yandex.Metrika counter -->
+
+
+
+
+
+	<!--
+	<	Preloader
+	-->
+		<div id="loader" class="pageload-overlay" data-opening="M -18 -26.90625 L -18 86.90625 L 98 86.90625 L 98 -26.90625 L -18 -26.90625 Z M 40 29.96875 C 40.01804 29.96875 40.03125 29.98196 40.03125 30 C 40.03125 30.01804 40.01804 30.03125 40 30.03125 C 39.98196 30.03125 39.96875 30.01804 39.96875 30 C 39.96875 29.98196 39.98196 29.96875 40 29.96875 Z">
+			<div id="loader-wrapper">
+				<div id="loader-circle"></div>
+				<div id="logo"></div>
+			</div>
+			<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 80 60" preserveAspectRatio="xMidYMid slice">
+				<path d="M -18 -26.90625 L -18 86.90625 L 98 86.90625 L 98 -26.90625 L -18 -26.90625 Z M 40 -25.6875 C 70.750092 -25.6875 95.6875 -0.7500919 95.6875 30 C 95.6875 60.750092 70.750092 85.6875 40 85.6875 C 9.2499078 85.6875 -15.6875 60.750092 -15.6875 30 C -15.6875 -0.7500919 9.2499078 -25.6875 40 -25.6875 Z"/>
+			</svg>
+		</div><!-- /pageload-overlay -->
+	<!--
+	<	End Preloader
+	-->
+
+	<div ui-view></div>
+
+	<!--scripts-->
+		<!-- Angular scripts -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Knob/1.2.13/jquery.knob.min.js"></script>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-animate.min.js"></script>
+		<!--<script src="app/assets/libs/angular/angular.min.js"></script>-->
+		<script src="app/assets/libs/angular/angular-ui-router.min.js"></script>
+		<script src="app/assets/libs/angular/angular-resource.min.js"></script>
+		<script src="app/assets/libs/angular/angular-local-storage.min.js"></script>
+		<script src="app/assets/libs/angular/angular-route.min.js"></script>
+		<script src="app/assets/libs/angular/angular-hotkeys.min.1.7.0.js"></script>
+		<script src="app/assets/libs/angular/ng-device-detector.min.js"></script>
+		<script src="app/assets/libs/angular/re-tree.min.js"></script>
+		<script src="https://code.angularjs.org/1.3.0-rc.2/angular-messages.js"></script>
+		<script src="app/assets/libs/angular/v-accordion.js"></script>
+		<!-- app -->
+		<script src="app/app.controllers.js"></script>
+		<script src="app/app.module.js"></script>
+		<script src="app/app.services.js"></script>
+		<script src="app/app.routes.js"></script>
+		<!-- Components  / login -->
+
+		<script src="app/components/login/controllers/diforb.login.controllers.js"></script>
+		<script src="app/components/login/controllers/diforb.login.controllers.start.js?a=123937"></script>
+		<script src="app/components/login/controllers/diforb.login.controllers.signin.js"></script>
+		<script src="app/components/login/controllers/diforb.login.controllers.signup.js"></script>
+		<script src="app/components/login/controllers/diforb.login.controller.associate.js"></script>
+
+		<script src="app/components/login/controllers/diforb.login.controllers.resendlink.js"></script>
+		<script src="app/components/login/controllers/diforb.login.controllers.resetpassword.js"></script>
+		<script src="app/components/login/controllers/diforb.login.controllers.newpassword.js"></script>
+		<!-- Components  / about -->
+		<script src="app/components/about/diforb.controller.about.js"></script>
+		<!-- Components  / aplication -->
+		<script src="app/components/aplication/diforb.directive.aplication.js"></script>
+		<!-- Components  / home -->
+		<script src="app/components/home/diforb.directive.home.js"></script>
+		<script src="app/components/home/diforb.service.support.js"></script>
+		<script src="app/components/home/diforb.controler.support.js"></script>
+		<script src="app/components/home/diforb.service.getintouch.js"></script>
+		<script src="app/components/home/diforb.controler.getintouch.js"></script>
+
+		<!-- CONTROLLER LIBRARY -->
+		<script src="app/shared/library/diforb.controller.library.js"></script>
+		
+		<!-- Account  / Settings -->
+		<script src="app/shared/auth/diforb.controller.accountsettings.js"></script>
+
+		<!-- Shared -->
+		<!-- Shared / Category -->
+		<script src="app/shared/category/diforb.category.directive.js"></script>
+		<!-- Shared / Library -->
+		<script src="app/shared/library/diforb.service.library.js"></script>
+		<!-- Shared / Sound -->
+		<script src="app/shared/sound/diforb.service.sound.js"></script>
+		<script src="app/shared/sound/diforb.sound.directive.js"></script>
+		<!-- Shared / PayPal -->
+		<script src="app/shared/paymentpaypal/diforb.services.paypal.js"></script>
+		<!-- Shared / Sub-Category -->
+		<script src="app/shared/subcategory/diforb.subcategory.directive.js"></script>
+		<!-- Shared / Menu -->
+		<script src="app/shared/menu/diforb.menu.directive.js"></script>
+		<!-- Auth scripts -->
+		<script src="app/shared/auth/diforb.services.auth.js"></script>
+		<!-- Errors Service -->
+		<script src="app/shared/error/diforb.service.error.js"></script>
+		<script src="app/shared/error/diforb.directives.error.js"></script>
+		<!-- Shared / web AUdio API-->
+		<script src="app/assets/libs/angular/FileSaver.min.js"></script>
+		<script src="app/assets/js/sound.js"></script>
+		<script src="app/assets/js/bufferLoader.js"> </script>
+		<script src="app/assets/js/recorder.js"></script>
+		<script src="app/shared/webaudioapi/diforb.service.webaudioapi.js"></script>
+		<script src="app/shared/webaudioapi/diforb.service.saver.js"></script>
+		<!-- JS Libraries -->
+		<script src="app/assets/libs/jquery/jquery-ui-1.9.2.custom.min.js"></script>
+		<script src="app/assets/libs/jquery/requires.3.0.6.js"></script>
+		<script src="app/assets/libs/jquery/animateScrollContent.jQuery.js"></script>
+		<!-- <script src="app/assets/libs/other/widgets.js"></script> -->
+		<script src="app/assets/libs/other/snap.svg-min.js"></script>
+		<script src="app/assets/libs/other/classie.js"></script>
+		<script src="app/assets/libs/other/svgLoader.js"></script>
+		<script src="app/assets/libs/other/scroll-animation.js"></script>
+		<!-- Custom Libs -->
+		<script src="app/assets/libs/jquery/jquery.mCustomScrollbar.concat.min.js"></script>
+	<!--end scripts-->
+</body>
+
+
+
+</html>

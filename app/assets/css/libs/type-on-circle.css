@@ -1,0 +1,293 @@
+
+.badge
+{
+      position: relative;
+      width: 400px;
+      border-radius: 50%;
+      -webkit-transform: rotate(-29deg);
+                   transform: rotate(-29deg);
+      left:164px;
+      top:35px;
+
+}
+.zoo .badge {
+      -webkit-transform: rotate(-12deg);
+                  transform: rotate(-12deg);
+      left: 239px;
+      top: 69px;
+}
+.falling .badge {
+      -webkit-transform: rotate(-24deg);
+                  transform: rotate(-24deg);
+      left: 188px;
+      top: 43px;
+}
+.puzzle .badge {
+      -webkit-transform: rotate(-22deg);
+                  transform: rotate(-22deg);
+      left: 195px;
+      top: 47px;
+}
+.pick-up .badge {
+       -webkit-transform: rotate(-23.5deg);
+                  transform: rotate(-23.5deg);
+      left: 189px;
+      top: 44px;
+}
+.birds .badge
+{
+      -webkit-transform: rotate(-18deg);
+                  transform: rotate(-18deg);
+      left: 215px;
+      top: 54px;
+}
+
+.destruction .badge
+{
+      width: 550px;
+
+      -webkit-transform: rotate(-35deg);
+                  transform: rotate(-35deg);
+      left: 122px;
+      top: -14px;
+}
+
+.player h1
+{
+      white-space:nowrap;
+      text-transform: uppercase;
+      text-align:center;
+      color: #79afa2;
+      font-size: 20px;
+
+}
+
+h1 span
+{
+      height: 190px;
+      position:absolute;
+      width: 20px;
+      left: 0;
+      top: 0;
+      -webkit-transform-origin: bottom center;
+      -moz-transform-origin: bottom center;
+      -ms-transform-origin: bottom center;
+      -o-transform-origin: bottom center;
+      transform-origin: bottom center;
+}
+
+.char1
+{
+      -webkit-transform: rotate(6deg);
+      -moz-transform: rotate(6deg);
+      -ms-transform: rotate(6deg);
+      -o-transform: rotate(6deg);
+      transform: rotate(6deg);
+}
+
+.char2
+{
+      -webkit-transform: rotate(12deg);
+      -moz-transform: rotate(12deg);
+      -ms-transform: rotate(12deg);
+      -o-transform: rotate(12deg);
+      transform: rotate(12deg);
+}
+
+.char3
+{
+      -webkit-transform: rotate(18deg);
+      -moz-transform: rotate(18deg);
+      -ms-transform: rotate(18deg);
+      -o-transform: rotate(18deg);
+      transform: rotate(18deg);
+}
+
+.char4
+{
+      -webkit-transform: rotate(24deg);
+      -moz-transform: rotate(24deg);
+      -ms-transform: rotate(24deg);
+      -o-transform: rotate(24deg);
+      transform: rotate(24deg);
+}
+
+.char5
+{
+      -webkit-transform: rotate(30deg);
+      -moz-transform: rotate(30deg);
+      -ms-transform: rotate(30deg);
+      -o-transform: rotate(30deg);
+      transform: rotate(30deg);
+}
+
+.char6
+{
+      -webkit-transform: rotate(36deg);
+      -moz-transform: rotate(36deg);
+      -ms-transform: rotate(36deg);
+      -o-transform: rotate(36deg);
+      transform: rotate(36deg);
+}
+
+.char7
+{
+      -webkit-transform: rotate(42deg);
+      -moz-transform: rotate(42deg);
+      -ms-transform: rotate(42deg);
+      -o-transform: rotate(42deg);
+      transform: rotate(42deg);
+}
+
+.char8
+{
+      -webkit-transform: rotate(48deg);
+      -moz-transform: rotate(48deg);
+      -ms-transform: rotate(48deg);
+      -o-transform: rotate(48deg);
+      transform: rotate(48deg);
+}
+
+.char9
+{
+      -webkit-transform: rotate(54deg);
+      -moz-transform: rotate(54deg);
+      -ms-transform: rotate(54deg);
+      -o-transform: rotate(54deg);
+      transform: rotate(54deg);
+}
+
+.char10
+{
+      -webkit-transform: rotate(60deg);
+      -moz-transform: rotate(60deg);
+      -ms-transform: rotate(60deg);
+      -o-transform: rotate(60deg);
+      transform: rotate(60deg);
+}
+
+.char11
+{
+      -webkit-transform: rotate(66deg);
+      -moz-transform: rotate(66deg);
+      -ms-transform: rotate(66deg);
+      -o-transform: rotate(66deg);
+      transform: rotate(66deg);
+}
+
+.char12
+{
+      -webkit-transform: rotate(72deg);
+      -moz-transform: rotate(72deg);
+      -ms-transform: rotate(72deg);
+      -o-transform: rotate(72deg);
+      transform: rotate(72deg);
+}
+
+.char13
+{
+      -webkit-transform: rotate(78deg);
+      -moz-transform: rotate(78deg);
+      -ms-transform: rotate(78deg);
+      -o-transform: rotate(78deg);
+      transform: rotate(78deg);
+}
+
+.char14
+{
+      -webkit-transform: rotate(84deg);
+      -moz-transform: rotate(84deg);
+      -ms-transform: rotate(84deg);
+      -o-transform: rotate(84deg);
+      transform: rotate(84deg);
+}
+
+.char15
+{
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      transform: rotate(90deg);
+}
+
+.char16
+{
+      -webkit-transform: rotate(96deg);
+      -moz-transform: rotate(96deg);
+      -ms-transform: rotate(96deg);
+      -o-transform: rotate(96deg);
+      transform: rotate(96deg);
+}
+
+.char17
+{
+      -webkit-transform: rotate(102deg);
+      -moz-transform: rotate(102deg);
+      -ms-transform: rotate(102deg);
+      -o-transform: rotate(102deg);
+      transform: rotate(102deg);
+}
+
+.char18
+{
+      -webkit-transform: rotate(108deg);
+      -moz-transform: rotate(108deg);
+      -ms-transform: rotate(108deg);
+      -o-transform: rotate(108deg);
+      transform: rotate(108deg);
+}
+
+.char19
+{
+      -webkit-transform: rotate(114deg);
+      -moz-transform: rotate(114deg);
+      -ms-transform: rotate(114deg);
+      -o-transform: rotate(114deg);
+      transform: rotate(114deg);
+}
+
+.char20
+{
+      -webkit-transform: rotate(120deg);
+      -moz-transform: rotate(120deg);
+      -ms-transform: rotate(120deg);
+      -o-transform: rotate(120deg);
+      transform: rotate(120deg);
+}
+
+.char21
+{
+      -webkit-transform: rotate(126deg);
+      -moz-transform: rotate(126deg);
+      -ms-transform: rotate(126deg);
+      -o-transform: rotate(126deg);
+      transform: rotate(126deg);
+}
+
+.char22
+{
+      -webkit-transform: rotate(132deg);
+      -moz-transform: rotate(132deg);
+      -ms-transform: rotate(132deg);
+      -o-transform: rotate(132deg);
+      transform: rotate(132deg);
+}
+
+.char23
+{
+      -webkit-transform: rotate(138deg);
+      -moz-transform: rotate(138deg);
+      -ms-transform: rotate(138deg);
+      -o-transform: rotate(138deg);
+      transform: rotate(138deg);
+}
+
+.char24
+{
+      -webkit-transform: rotate(144deg);
+      -moz-transform: rotate(144deg);
+      -ms-transform: rotate(144deg);
+      -o-transform: rotate(144deg);
+      transform: rotate(144deg);
+}

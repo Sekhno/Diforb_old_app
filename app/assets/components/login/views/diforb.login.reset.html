@@ -1,0 +1,25 @@
+<div id="form--author--resetpassword" ng-class="{shake: errorMessage}">
+
+      <div ng-show="infoMessage">
+            <h3>{{infoMessage.title}}</h3>
+            <p>{{infoMessage.message}}</p>
+            <button id="logIn" ui-sref="login.signin">Log in</button>
+      </div>
+
+      <form id="form--resetpassword" ng-hide="infoMessage" name="formresetpassword">
+
+            <h3>Reset Password</h3>
+
+            <p>Just enter your e-mail and we'll send you instructions</p>
+
+            <input id="login" type="email" name="email" placeholder="email" ng-model="loginData.email" ng-class="{ error: errorService.hasFieldError(formresetpassword, formresetpassword.email) }" required /><br>
+            <label ng-show="errorService.hasFieldError(formresetpassword, formresetpassword.email)" class="error" ng-messages="formresetpassword.email.$error" ng-messages-include="app/components/login/views/messages.html"></label>
+
+            <p id="alertResetPassword" ng-show="errorMessage">{{errorModelState}}</p>
+
+            <a class="btn-back" ui-sref="login.start"><span class="icon-undo"></span>Back</a>
+
+            <button id="resetPassword" ng-click="resetpassword($event)"><i class="icon-reset"></i>Send</button><br>
+      </form>
+</div>
+<spinner-process ng-show="spinnerShow"></spinner-process>

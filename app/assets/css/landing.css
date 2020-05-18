@@ -1,0 +1,502 @@
+html { box-sizing: border-box }
+.landing a {
+	font-size: 1.3em;
+	text-decoration: none
+}
+.navigation-down {
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	font-size: 3em;
+	-webkit-transform: translateX(-50%);
+			transform: translateX(-50%);
+}
+#video{
+	position: absolute;
+	pointer-events: none;
+	z-index: -2;
+}
+#video.play-video { z-index: 10 }
+#video.play-video video {
+	width: 100vw;
+	height: 100vh;
+}
+@media all and (min-width:1200px) {
+	#video.play-video video {
+		height: auto;
+	}
+}
+.play-now + #video{
+	left: 0;
+	right: 0;
+	top:50%;
+	-webkit-transform: translateY(-50%);
+			transform: translateY(-50%);
+}
+.play-now + .icon-close-video{
+	display: inline-block;
+}
+.icon-close-video{
+	display: none;
+	position:absolute;
+	top:20px;
+	right: 20px;
+	color: white;
+	font-size: 3em;
+	cursor: pointer;
+	z-index: 20;
+}
+#form{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	background: -webkit-linear-gradient(top,
+		rgba(0, 0, 0, .3) 0,
+		rgba(0, 0, 0, 0) 100%);
+	background: linear-gradient(to bottom,
+		rgba(0, 0, 0, .3) 0,
+		rgba(0, 0, 0, 0) 100%);
+	display: block;
+	width: 100%;
+	padding: 0 40px 20px;
+	border-radius: 3px;
+	-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+	-webkit-transition: .3s;
+   			transition: .3s;
+}
+@media all and (min-width:1200px) {
+	#form{ width: 350px }
+}
+.logo-head{
+	margin: 0;
+	text-align: center;
+	color: white;
+}
+.logo-head .icon-diforb-logo-slogan {
+	font-size: 8em;
+	line-height: 1em;
+}
+#form h3:not(.logo-head){
+	padding: 20px 0;
+	font-size: 1.5em;
+	/* color: #fff; */
+	letter-spacing: 0;
+	text-align: center
+}
+#form--author--signup a,
+#form--author--login a,
+#form--author--signin a,
+#form--author--resetpassword a { color: #fff }
+#form--author--signin a:nth-child(2),
+#form--author--signin a:nth-child(3),
+#form--author--signin a:nth-child(4) {
+	display: block;
+	width: 100%;
+	padding: 10px 0;
+	text-align: center;
+	border-radius: 3px
+}
+#form--author--signin a:nth-child(2) i,
+#form--author--signin a:nth-child(3) i,
+#form--author--signin a:nth-child(4) i { margin-right: 15px }
+#form--author--signin i:not(.icon-diforb-logo-slogan) {
+	/*position: relative;
+	top: 4px;*/
+	font-size: 1.5em;
+}
+/*#form--author--signin a:nth-child(2),
+#form--author--signin a:nth-child(3) { padding: 4px 0 10px 0 }*/
+#form--author--signin a:nth-child(2) {
+	margin-bottom: 10px;
+	background: #5692d1
+}
+#form--author--signin a:nth-child(3){
+	margin-bottom: 10px;
+	background: #e06746
+}
+#form--author--signin a:nth-child(4){
+	margin-top: 40px;
+	margin-bottom: 10px;
+	background: #00cd99
+}
+#form--author--signin a:nth-child(4):before{
+	position: absolute;
+	display: block;
+	clear: both;
+	content: '- or -';
+	left: 50%;
+	cursor: text;
+	-webkit-transform: translate(-50%, -200%);
+			transform: translate(-50%, -200%)
+}
+#form--author--signin span{
+	float: left;
+	margin-left: 10px;
+	color: white;
+	font-size: 1.1em;
+	line-height: 19px;
+}
+#form--author--signin a:nth-child(6){
+	float: right;
+	margin-right: 10px
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    	-webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+    			transition: "color 9999s ease-out, background-color 9999s ease-out";
+    	-webkit-transition-delay: 9999s;
+    			transition-delay: 9999s;
+}
+#form--author--associate input,
+#form--author--login input,
+#form--author--signup input,
+#form--author--resetpassword input{
+	width: 100%;
+	margin: 5px 0;
+	padding: 8px 15px;
+	text-align: center;
+	color: #7beaf4;
+	-webkit-text-fill-color: #7beaf4;
+	font-size: 1.3em;
+	line-height: 1.3em;
+	border: none;
+	border-radius: 5px;
+	background-color: rgba(0, 0, 0,0.5);
+	box-sizing: border-box;
+}
+#form--author--login input.error,
+#form--author--signup input.error,
+#form--author--resetpassword.error { border: 1px solid rgba(255,0,0,0.5) }
+#form--author--login button,
+#form--author--signup button,
+#form--associate button {
+	float: right;
+	display: inherit;
+	position: relative;
+	top: 3px;
+	width: 100px;
+	padding: 5px;
+	color: #fff;
+	text-align: center;
+	font-size: 1.3em;
+	line-height: 1.4em;
+	background: #49ba73;
+	outline: 0;
+	border: 1px solid transparent;
+	border-radius: 25px;
+	-webkit-transition: all .2s;
+			transition: all .2s;
+}
+#form--author--login button:hover,
+#form--author--signup button:hover,
+#form--author--resetpassword button:hover,
+#form--associate button:hover {
+	background: transparent;
+	border: 1px solid  #49ba73;
+}
+#form--author--resetpassword #logIn{
+	display: inherit;
+	position: relative;
+	top: 10px;
+	width: 100px;
+	padding: 5px;
+	margin: auto;
+	color: #fff;
+	font-size: 1.3em;
+	line-height: 1.4em;
+	background: #49ba73;
+	outline: 0;
+	border: 1px solid transparent;
+	border-radius: 25px;
+	-webkit-transition: all .2s;
+			transition: all .2s;
+}
+#form--author--resetpassword #logIn:hover {
+	background: transparent;
+	border: 1px solid  #49ba73;
+}
+#form--author--login p,
+#form--author--signup p,
+#form--author--resetpassword p {
+	color: white;
+	text-align: center;
+	font-size: 1.4em;
+	line-height: 19px;
+}
+#form--author--resetpassword h4{
+	margin: 5px 0;
+	color: white;
+	font-size: 1em;
+}
+#form--author--resetpassword input { text-align: left }
+#resetPassword {
+	float: right;
+	margin-top: 3px;
+	padding: 6px 15px;
+	color: white;
+	font-size: 1.3em;
+	/* line-height: 1.3em; */
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	outline: 0;
+	background-color: #7dc54a;
+	border-radius: 25px;
+	border: 1px solid transparent;
+	-webkit-transition: all .2s;
+			transition: all .2s;
+}
+#resetPassword i {
+	position: relative;
+	// top: 3px;
+	left: -4px;
+	font-size: 1.2em;
+	-webkit-transition: all .8s;
+			transition: all .8s;
+}
+#resetPassword:hover {
+	background-color: transparent;
+	border: 1px solid #7dc54a;
+}
+#resetPassword:hover i {
+	display: inline-block;
+	-webkit-transform: rotate(360deg);
+			transform: rotate(360deg);
+
+}
+.landing #focus {
+	position: absolute;
+	border-radius: 50%
+}
+.landing {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+	background: black -webkit-radial-gradient(top,ellipse cover,
+ 		rgba(78,191,251,1) 0%,
+ 		rgba(39,101,133,1) 70%);
+    	background: black radial-gradient(ellipse at top,
+ 		rgba(78,191,251,1) 0%,
+ 		rgba(39,101,133,1) 70%);
+	background-attachment: fixed;
+}
+@media all and (min-width:1200px) {
+	.landing { background: rgba(0,0,0,0.3) }
+}
+.landing #focus{
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: -250px;
+	height: auto;
+	background: #000;
+	-webkit-transform: scale(0, 0);
+			transform: scale(0, 0);
+	-webkit-transition: all 1s;
+			transition: all 1s;
+	opacity: 1;
+	z-index: 6
+}
+#btnPlayVideo {
+	width: 100%;
+	height: 45px;
+	margin-top: 20px;
+	color: white;
+	font-size: 1.4em;
+	font-size: 14px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	background: #263440;
+	border-radius: 5px;
+	border: none;
+}
+#btnPlayVideo:before,
+#btnPlayVideo.btn-play:before {
+	position: relative;
+    	top: 4px;
+   	margin-right: 8px;
+    	display: inline-block;
+    	font-family: 'diforb_ui';
+    	font-size: 1.4em;
+    	line-height: 0;
+}
+#btnPlayVideo:before { content: "\c103" }
+.landing.play-now #focus {
+	-webkit-transform: scale(2, 2);
+			transform: scale(2, 2)
+}
+@media all and (min-width:1200px) {
+	#btnPlayVideo { width: 270px }
+}
+#form {
+	box-sizing: border-box;
+	z-index: 5;
+}
+input.error{ border: 1px solid rgba(255,0,0,0.2) }
+label.error {
+	display: inline-block;
+	width: 100%;
+}
+.success-msg {
+	padding: 10px 5px;
+	color: white;
+	font-size: 1.3em;
+	line-height: 15px;
+	letter-spacing: 0;
+	text-align: center;
+}
+#alert,
+#alertSignUp,
+.error-msg,
+label.error {
+	padding: 10px 5px;
+	color: white;
+	font-size: 1.3em;
+	line-height: 15px;
+	letter-spacing: 0;
+	text-align: center;
+	background: rgba(255,0,0,0.2);
+	box-sizing: border-box;
+}
+@-webkit-keyframes shake {
+	from, to {
+		-webkit-transform: translate3d(0, 0, 0);
+				transform: translate3d(0, 0, 0);
+	}
+	10%, 30%, 50%, 70%, 90% {
+		-webkit-transform: translate3d(-10px, 0, 0);
+				transform: translate3d(-10px, 0, 0);
+	}
+	20%, 40%, 60%, 80% {
+		-webkit-transform: translate3d(10px, 0, 0);
+				transform: translate3d(10px, 0, 0);
+	}
+}
+@keyframes shake {
+	from, to {
+		-webkit-transform: translate3d(0, 0, 0);
+				transform: translate3d(0, 0, 0);
+	}
+	10%, 30%, 50%, 70%, 90% {
+		-webkit-transform: translate3d(-10px, 0, 0);
+				transform: translate3d(-10px, 0, 0);
+	}
+	20%, 40%, 60%, 80% {
+		-webkit-transform: translate3d(10px, 0, 0);
+				transform: translate3d(10px, 0, 0);
+	}
+}
+.shake {
+	-webkit-animation-duration: .5s;
+			animation-duration: .5s;
+	-webkit-animation-fill-mode: both;
+			animation-fill-mode: both;
+	-webkit-animation-name: shake;
+			animation-name: shake;
+}
+.btn-back {
+	position: relative;
+	top: 12px;
+	padding: 8px 14px;
+	color: white !important;
+	font-size: 0.7em;
+	line-height: 1em;
+	background-color: rgba(0,0,0,0.5);
+	border: 1px solid transparent;
+	border-radius: 25px;
+	-webkit-transition: all .2s;
+			transition: all .2s;
+}
+.btn-back:hover {
+	background-color: transparent;
+	border: 1px solid rgba(0,0,0,0.5);
+}
+a.btn-back > span{
+	position: relative;
+	top: 1px;
+	margin-right: 5px;
+}
+a.btn-resetpassword {
+	display: block;
+	margin-top: 30px;
+	cursor: pointer;
+	text-align: center;
+}
+a.btn-resetpassword:hover { color: #7dc54a !important }
+.spinner-process{
+	position: absolute;
+	top: 0;
+    	left: 0;
+    	right: 0;
+    	bottom: 0;
+	background-color: rgba(0,0,0,0.7);
+    	background-image: repeating-linear-gradient(-45deg,
+		transparent, transparent 10px,
+		rgba(255,255,255,0.03) 10px,
+		rgba(255,255,255,0.03) 20px);
+}
+.spinner-process p{
+	position: absolute;
+    	top: 50%;
+    	left: 50%;
+    	margin: 0;
+    	font-size: 1.5em;
+    	color: white;
+    	-webkit-transform: translate(-50%,-50%);
+    			transform: translate(-50%,-50%);
+}
+.spinner-process p:after{
+	position: absolute;
+	top: 0;
+	right: 0px;
+	content: '...';
+	clear: both;
+	display: block;
+	width: 0px;
+	overflow: hidden;
+	-webkit-animation-name: spinner;
+			animation-name: spinner;
+	-webkit-animation-duration: 1s;
+			animation-duration: 1s;
+	-webkit-animation-iteration-count: infinite;
+			animation-iteration-count: infinite;
+}
+@-webkit-keyframes spinner {
+	from {
+		width: 0px;
+		right: 0px;
+	}
+	to {
+		width:18px;
+		right: -18px;
+	}
+}
+@keyframes spinner {
+	from {
+		width: 0px;
+		right: 0px;
+	}
+	to {
+		width:18px;
+		right: -18px;
+	}
+}
+#form--associate p { color: white }
+.social-links:not(.home) {
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+			transform: translateX(-50%);
+}
+.social-links:not(.home) a {
+	color: white;
+	font-size: 1.8em;
+	padding: 0 10px;
+}

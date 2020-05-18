@@ -1,0 +1,29 @@
+<section class="diforb-wrapper" ng-class="{'menu-active': dm.menuActive,'filter-blur': !dm.isVideoTutorial}" ng-click="dm.closeMenuLib()">
+	<section class="diforb-section" diforb-library ng-class="{'menu-active': dm.menuActive}">
+		<div class="wrapper">
+			<diforb-aplication></diforb-aplication>
+		</div>
+		<div class="dropdowns-container">
+			<diforb-category ng-repeat="side in libSides"></diforb-category>
+		</div>
+	</section>
+</section>
+<a class="icon-menuDiforb" ng-class="{'filter-blur':!dm.isVideoTutorial}" ng-click="dm.openMenuLib()" ng-hide="dm.menuActive" title="Menu">
+	<span class="icon-menu"></span>
+</a>
+<div class="container-menu" ng-class="{'active': dm.menuActive,'filter-blur':!dm.isVideoTutorial}">
+	<diforb-menu></diforb-menu>
+</div>
+<div class="video-tutorial" ng-hide="dm.isVideoTutorial">
+	<div class="wrap-tutorial">
+		<div>
+			<span class="icon-close" ng-click="dm.closeVideoTutorial($event)"></span>
+			<video controls buffered="true">
+				<source src="http://diforbstrg.blob.core.windows.net/video/tutorial.mp4" type="video/mp4">
+		  		<source src="http://diforbstrg.blob.core.windows.net/video/tutorial.ogg" type="video/ogg">
+		  		<source src="http://diforbstrg.blob.core.windows.net/video/tutorial.webm" type="video/webm">
+  				Your browser does not support HTML5 video.
+			</video>
+		</div>
+	</div>
+</div>

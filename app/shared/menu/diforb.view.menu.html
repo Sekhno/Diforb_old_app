@@ -1,0 +1,34 @@
+<div class="dashboard--menu">
+	<div class="dashboard--menu--logo">
+		<span class="icon-diforb-logo"></span>
+		<a  ng-click="dm.closeMenuLib()" class="dashboard--lib-info--close">&times;</a>
+	</div>
+	<div class="dashboard--menu--user">
+		<span class="icon-avatar" ></span>
+		<div class="dashboard--title" ng-if="isAuthentificated">
+			<h3>hello</h3>
+			<h2>{{username}}</h2>
+		</div>
+		<div class="dashboard--user--tools" ng-if="isAuthentificated">
+			<a ng-click="dm.transitionLink($event)"><i class="icon-cog" data-sref="home.account"></i></a>
+			<a ng-click="dc.logOut()"><i class="icon-logout"></i></a>
+		</div>
+		<a class="link-registration" ui-sref="login.start" ng-if="!isAuthentificated">Log In or Register</a>
+	</div>
+	<div class="dashboard--menu--links">
+		<a data-sref="home.libraries" ng-click="dm.transitionLink($event)"><i class="icon-libs"></i>Libraries</a>
+		<a ng-click="dm.openVideoTutorial()"><i class="icon-play"></i>Watch Tutorial</a>
+		<a data-sref="home.how.faq" ng-click="dm.transitionLink($event)"><i class="icon-info"></i>F.A.Q.</a>
+		<ul>
+			<li><a data-sref="home.license" ng-click="dm.transitionLink($event)">License agreement</a></li>
+			<li><a data-sref="home.privacy" ng-click="dm.transitionLink($event)">Privacy policy</a></li>
+		</ul>
+		<a data-sref="home.support" ng-click="dm.transitionLink($event)"><i class="creatures-talk"></i>Give us your feedback</a>
+		<a data-sref="home.get" ng-click="dm.transitionLink($event)"><i class="puzzle-spell"></i>WISHLIST</a>
+		<div class="social-links home">
+			<a href="https://www.facebook.com/diforb/" target="_blank"><i class="icon-facebook"></i></a>
+			<a href="https://plus.google.com/u/4/b/101715622049611220150/101715622049611220150?pageId=101715622049611220150" target="_blank"><i class="icon-google"></i></a>
+			<a 	href="https://twitter.com/diforb" target="_blank"><i class="icon-twitter"></i></a>
+		</div>
+	</div>
+</div>

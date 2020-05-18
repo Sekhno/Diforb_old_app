@@ -1,0 +1,172 @@
+@font-face {
+  font-family: 'Ambience-icons';
+  src:  url('fonts/Ambience-icons.eot?z0q5lz');
+  src:  url('fonts/Ambience-icons.eot?z0q5lz#iefix') format('embedded-opentype'),
+    url('fonts/Ambience-icons.woff2?z0q5lz') format('woff2'),
+    url('fonts/Ambience-icons.ttf?z0q5lz') format('truetype'),
+    url('fonts/Ambience-icons.woff?z0q5lz') format('woff'),
+    url('fonts/Ambience-icons.svg?z0q5lz#Ambience-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="amb-"], [class*=" amb-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Ambience-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.amb-nature:before {
+  content: "\a900";
+}
+.amb-frog:before {
+  content: "\a901";
+}
+.amb-dog:before {
+  content: "\a902";
+}
+.amb-wolf:before {
+  content: "\a903";
+}
+.amb-bees:before {
+  content: "\a904";
+}
+.amb-stream:before {
+  content: "\a905";
+}
+.amb-waterfall:before {
+  content: "\a906";
+}
+.amb-waves:before {
+  content: "\a907";
+}
+.amb-chicken:before {
+  content: "\a908";
+}
+.amb-raver:before {
+  content: "\a909";
+}
+.amb-seagull:before {
+  content: "\a90a";
+}
+.amb-cuckoo:before {
+  content: "\a90b";
+}
+.amb-birds:before {
+  content: "\a90c";
+}
+.amb-flame:before {
+  content: "\a90d";
+}
+.amb-crickets:before {
+  content: "\a90e";
+}
+.amb-rain:before {
+  content: "\a90f";
+}
+.amb-thunder:before {
+  content: "\a910";
+}
+.amb-small-room:before {
+  content: "\a911";
+}
+.amb-big-room:before {
+  content: "\a912";
+}
+.amb-underwater:before {
+  content: "\a913";
+}
+.amb-port:before {
+  content: "\a914";
+}
+.amb-cave:before {
+  content: "\a915";
+}
+.amb-lake:before {
+  content: "\a916";
+}
+.amb-beach-day:before {
+  content: "\a917";
+}
+.amb-beach-night:before {
+  content: "\a918";
+}
+.amb-forest-day:before {
+  content: "\a919";
+}
+.amb-forest-night:before {
+  content: "\a91a";
+}
+.amb-city-day2:before {
+  content: "\a91b";
+}
+.amb-city-night:before {
+  content: "\a91c";
+}
+.amb-walla:before {
+  content: "\a91d";
+}
+.amb-clock:before {
+  content: "\a91e";
+}
+.amb-mystical:before {
+  content: "\a91f";
+}
+.amb-firefight:before {
+  content: "\a920";
+}
+.amb-cooking:before {
+  content: "\a921";
+}
+.amb-fire:before {
+  content: "\a922";
+}
+.amb-traffic:before {
+  content: "\a923";
+}
+.amb-train:before {
+  content: "\a924";
+}
+.amb-construction:before {
+  content: "\a925";
+}
+.amb-boat-horn:before {
+  content: "\a926";
+}
+.amb-bats:before {
+  content: "\a927";
+}
+.amb-cave2:before {
+  content: "\a928";
+}
+.amb-beach-day2:before {
+  content: "\a929";
+}
+.amb-beach-night2:before {
+  content: "\a92a";
+}
+.amb-forest-day2:before {
+  content: "\a92b";
+}
+.amb-forest-night2:before {
+  content: "\a92c";
+}
+.amb-city-night2:before {
+  content: "\a92d";
+}
+.amb-city-daysvg:before {
+  content: "\a92e";
+}
+.amb-location:before {
+  content: "\a92f";
+}
+

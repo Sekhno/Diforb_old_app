@@ -1,0 +1,37 @@
+<section class="dashboard--lib-info">
+	<div class="dashboard--lib-info--wrap" container-section>
+
+		<a 	ui-sref="home.libraries" ng-click="libraryNull()" class="dashboard--lib-info--close">close<span>&times;</span></a>
+		<audio ng-src="{{'src/audio/' + library.audio}}" preload="none"></audio>
+		<img 	ng-src="app/assets/img/jpg/covers/{{library.image}}"
+	    		ng-srcset="app/assets/img/jpg/covers/retina/{{library.image}} 2x" alt="{{library.image}}"/>
+		<h2>{{library.title}}</h2>
+		<h4 ng-if="library">
+			by<span>
+				{{library.author}}
+				<span><a ng-href="{{library.icon}}" target="_blank">(License)</a></span>
+			</span>
+		</h4>
+		<div 	class="dashboard--btn-play" ng-class="{'disable': library.audio === null}"></div>
+		<a 	href="/#/library/{{::library.name | lowercase}}"
+				ng-click="deleteClassLoaded()" class="dashboard--btn-launch" target="_blank"
+				ng-if="!library.isComingSoon&amp;&amp;desktop&amp;&amp;!isSafaryBrowser">launch</a>
+		<a  class="dashboard--btn-launch" ng-if="!library.isComingSoon&amp;&amp;!desktop&amp;&amp;!isSafaryBrowser">launch
+			<div class="tooltip-launch">Please use desktop.<br>The mobile is comming.</div>
+		</a>
+		<a  class="dashboard--btn-launch" ng-if="!library.isComingSoon&amp;&amp;isSafaryBrowser">launch
+			<div class="tooltip-launch safari">Please use Chrome or Firefox.<br>It will be implemented the application working in Safary ASAP.</div>
+		</a>
+		<a 	class="dashboard--btn-launch__coming-soon" ng-if="library.isComingSoon">coming soon</a>
+		<p class="dashboard--library--info">{{library.description}}</p>
+		<div class="dashboard--inside">
+			<h3>What inside</h3>
+			<ul>
+				<li ng-repeat="category in library.categories">
+					<i ng-class="category.icon"></i>
+					<h5>{{category.title + ' (' + category.soundCount + ')'}}</h5>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>

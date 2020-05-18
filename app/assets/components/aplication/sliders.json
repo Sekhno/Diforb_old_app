@@ -1,0 +1,23 @@
+[
+	{
+		"class_out" : "slider-range-wrap-left-top",
+		"class_in" : "slider-range slider-left-top"
+	},
+	{
+		"class_out" : "slider-range-wrap-right-top",
+		"class_in" : "slider-range slider-right-top"
+	},
+	{
+		"class_out" : "slider-range-wrap-middle-top",
+		"class_in" : "slider-range slider-middle-top"
+	},
+	{
+		"class_out" : "slider-range-wrap-left-bottom",
+		"class_in" : "slider-range slider-left-bottom"
+	},
+	{
+		"class_out" : "slider-range-wrap-right-bottom",
+		"class_in" : "slider-range slider-right-bottom"
+	}
+
+]

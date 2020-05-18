@@ -1,0 +1,151 @@
+@font-face {
+  font-family: 'Destruction_icons';
+  src:  url('fonts/Destruction_icons.eot?96ylh7');
+  src:  url('fonts/Destruction_icons.eot?96ylh7#iefix') format('embedded-opentype'),
+    url('fonts/Destruction_icons.woff2?96ylh7') format('woff2'),
+    url('fonts/Destruction_icons.ttf?96ylh7') format('truetype'),
+    url('fonts/Destruction_icons.woff?96ylh7') format('woff'),
+    url('fonts/Destruction_icons.svg?96ylh7#Destruction_icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="destruction-"], [class*=" destruction-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Destruction_icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.destruction-cardboard-scrape:before {
+  content: "\e90e";
+}
+.destruction-destr-wood-creak:before {
+  content: "\e90a";
+}
+.destruction-other-energyimpulse:before {
+  content: "\e900";
+}
+.destruction-other-shockwaveimpact:before {
+  content: "\e901";
+}
+.destruction-other-futureimpact:before {
+  content: "\e902";
+}
+.destruction-other-clothesrip:before {
+  content: "\e903";
+}
+.destruction-other-bigvrystalbreaking:before {
+  content: "\e904";
+}
+.destruction-other-smalliceblocksfalling:before {
+  content: "\e905";
+}
+.destruction-other-icebreaking:before {
+  content: "\e906";
+}
+.destruction-other:before {
+  content: "\e907";
+}
+.destruction-dirt-sandfalling:before {
+  content: "\e908";
+}
+.destruction-dirt-fallinglight:before {
+  content: "\e909";
+}
+.destruction-dirt:before {
+  content: "\e90b";
+}
+.destruction-stone-fallings:before {
+  content: "\e90c";
+}
+.destruction-stone-debris:before {
+  content: "\e90d";
+}
+.destruction-stone:before {
+  content: "\e90f";
+}
+.destruction-glass-debris:before {
+  content: "\e910";
+}
+.destruction-glass-breaking:before {
+  content: "\e911";
+}
+.destruction-plastic-creak:before {
+  content: "\e913";
+}
+.destruction-plastic-breaking:before {
+  content: "\e914";
+}
+.destruction-plastic-smallimpact:before {
+  content: "\e915";
+}
+.destruction-plastic-bigimpact:before {
+  content: "\e916";
+}
+.destruction-plastic:before {
+  content: "\e917";
+}
+.destruction-paper-cardboardboximpact:before {
+  content: "\e918";
+}
+.destruction-paper-cardboardtearing:before {
+  content: "\e919";
+}
+.destruction-paper-crumble:before {
+  content: "\e91a";
+}
+.destruction-paper:before {
+  content: "\e91b";
+}
+.destruction-metal-creak:before {
+  content: "\e91d";
+}
+.destruction-metal-smallimpacts:before {
+  content: "\e91e";
+}
+.destruction-metal-bigimpacts:before {
+  content: "\e91f";
+}
+.destruction-metal-chains:before {
+  content: "\e920";
+}
+.destruction-metal-barfalling:before {
+  content: "\e921";
+}
+.destruction-metal-pipe:before {
+  content: "\e922";
+}
+.destruction-metal:before {
+  content: "\e923";
+}
+.destruction-wood-creak:before {
+  content: "\e924";
+}
+.destruction-wood-smallimpacts:before {
+  content: "\e925";
+}
+.destruction-wood-bigimpacts:before {
+  content: "\e926";
+}
+.destruction-wood-cahir:before {
+  content: "\e927";
+}
+.destruction-wood-chest:before {
+  content: "\e928";
+}
+.destruction-wood-barrel:before {
+  content: "\e929";
+}
+.destruction-wood:before {
+  content: "\e92a";
+}
+

@@ -1,0 +1,21 @@
+<ul class="ul-sound" sound-list><!-- ng-class="{'active fadeOut': $first}" -->
+	<li 	sound-elem ng-repeat="sound in subcategory.sounds | orderBy : [ 'order', 'title' ] " ng-click="ds.clickSound($event,
+		{
+			soundId: sound.id,
+			categoryId: subcategory.id,
+			soundGroupName: soundGroup.name,
+			soundSide: side,
+			icon: sound.icon,
+			subIcon: subcategory.iconClass
+	  	},
+		{
+			categoryName: category.title,
+			subCategoryName: subcategory.title,
+			soundName: sound.title
+		})">
+		<div class="sub-category--sound" hover-sound>
+			<span>{{sound.title}}</span>
+		</div>
+	</li>
+	<div class="sound-square"></div>
+</ul>

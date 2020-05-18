@@ -1,0 +1,39 @@
+<header>
+	<div class="container">
+		<i class="icon-menu" ng-class="{'active': about.isBurgerActive}"  ng-click="about.burgerMenu()"></i>
+
+		<ul class="header-navigation">
+
+			<li  ng-click="about.menuTransition()"><a ui-sref="about.main" ng-class="{'current': currentStateName == 'about.main'}">about</a></li>
+
+			<li>license
+				<ul>
+					<li><a ui-sref="home.license">License agreement</a></li>
+					<li><a ui-sref="home.freesound">Freesound license</a></li>
+					<li><a ui-sref="home.privacy">Privacy policy</a></li>
+				</ul>
+			</li>
+
+			<li><a ui-sref="home.get">get in touch</a></li>
+		</ul>
+
+		<ul class="header-account">
+			<li ng-if="!about.isAuthentificated"><a ui-sref="login.start">Log In or register</a></li>
+			<li ng-if="about.isAuthentificated"><a ui-sref="home.account">{{about.userName}}</a></li>
+			<li ng-if="about.isAuthentificated"><a ng-click="dc.logOut()">Log out</a></li>
+		</ul>
+
+		<span class="icon-logo"></span>
+
+	</div>
+</header>
+
+<div ui-view="content"></div>
+
+<div class="fullscreen-bg">
+	<video loop muted autoplay class="fullscreen-bg__video">
+		<source src="http://strgblob.diforb.com/video/background/back-video.webm" type="video/webm">
+		<source src="http://strgblob.diforb.com/video/background/back-video.mp4" type="video/mp4">
+		<source src="http://strgblob.diforb.com/video/background/back-video.ogv" type="video/ogg">
+	</video>
+</div>

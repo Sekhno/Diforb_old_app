@@ -1,0 +1,56 @@
+<div class="dashboard--wrapper account--wrapper">
+		<div class="account--section">
+			<h3>User name</h3>
+			<input 	type="email"
+					placeholder="User Name"
+					readonly ng-model="aSettings.userName">
+			<a 	id="change-password"
+				ui-sref="home.account.change">Changes password</a>
+		</div>
+		<div class="account--section">
+			<form name="formSettings" action="">
+
+				<h3>First name</h3>
+				<input 	type="text"
+						placeholder="Your first name" ng-model="aSettings.firstName">
+
+				<h3>Last name</h3>
+				<input 	type="text"
+						placeholder="Your last name" ng-model="aSettings.lastName">
+
+
+				<h3>E-mail</h3>
+
+				<input name="email" type="email"
+						placeholder="name@mail.com" ng-model="aSettings.email" ng-class="{ error: errorService.hasFieldError(formSettings, formSettings.email) }" required>
+
+				<label ng-show="errorService.hasFieldError(formSettings, formSettings.email)" class="error postError" ng-messages="formSettings.email.$error">
+					<ng-messages class="error" for="formSettings.email.$error" ng-show="errorService.hasFieldError(formSettings, formSettings.email)">
+						<ng-message when="required">The E-mail field is required</ng-message>
+						<ng-message when="email">Invalid email address</ng-message>
+					</ng-messages>
+				</label>
+
+				<p id="alertSettingsError" class="postError" ng-show="errorMessage">{{errorMessage}}</p>
+
+				<span class="btn__subscribe-save">
+					<button ng-click="updateSettings($event)">{{saveBtnText}}</button>
+				</span>
+			</form>
+		</div>
+
+
+		<div class="account--section account--subscribe">
+			<p>Whant to receive news from DIFORB?</p>
+
+			<div class='tg-item'>
+				<input 	class='tgl tgl-light'
+						id='isNewsReceiving'
+						type='checkbox' ng-model="aSettings.isNewsReceiving">
+				<label 	class='tgl-btn'
+						data-tg-off='NO'
+						data-tg-on='YES'
+						for='isNewsReceiving'></label>
+			</div>
+		</div>
+</div>

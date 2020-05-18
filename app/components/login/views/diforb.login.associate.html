@@ -1,0 +1,18 @@
+<div id="form--author--associate" ng-class="{shake: errorMessage}">
+
+	<form name="formAssociate" id="form--associate" action="">
+
+		<h3>Associate your {{registerData.provider}} Account</h3>
+
+		<p style="text-align: center;">
+			You have successfully <br/> autheticated with {{registerData.provider}}.
+			<br/>
+		</p>
+
+		<button id="register" type="submit" ng-click="craftYourSound($event)">Enjoy!</button>
+
+	</form>
+
+</div>
+
+<spinner-process ng-show="spinnerShow"></spinner-process>

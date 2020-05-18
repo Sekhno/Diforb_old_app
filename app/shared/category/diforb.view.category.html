@@ -1,0 +1,38 @@
+<div ng-class="{'left-side' : side.isLeft, 'right-side' : side.isRight}" >
+
+	<div class="{{'category' + ' ' + soundGroup.categoryClass}}" ng-repeat="soundGroup in side.soundGroups ">
+
+		<a class="category-mute active" category-reset title="mute" ng-click="dCat.clickResetSound($event, side, soundGroup)"></a>
+
+		<a class="category-image dropdown-link" category-image>
+			<span ng-class="{'icon-add-a' : side.isLeft, 'icon-add-b' : side.isRight}"></span>
+			<i class="current-sound"></i>
+		</a>
+
+		<div class="dropdown">
+			<div ng-class="{'sound-category left' : side.isLeft, 'sound-category right' : side.isRight}" scroll-category>
+				<ul class="ul-category">
+
+					<li title="category" class="category" element-category ng-class="{'active':$first}" ng-repeat="category in soundGroup.categories | orderBy :  'order'" ng-click="dCat.clickCategory($event,category)">
+
+						<div class="span-category" ng-click="dCat.clickSpanCategory($event)">
+							<span class="{{category.iconClass}}"></span>
+							<span 	class="sound-category-name" hover-category>
+								<span>{{category.title}}</span>
+							</span>
+						</div>
+
+						<diforb-subcategory></diforb-subcategory>
+
+					</li>
+					<div class="category-square"></div>
+				</ul>
+			</div>
+			<span class="category-up icon-chevron-up"></span>
+			<span class="category-down icon-chevron-down"></span>
+		</div>
+	</div>
+</div>
+
+
+

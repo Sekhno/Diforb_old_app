@@ -1,0 +1,39 @@
+<div class="dashboard--wrapper account--wrapper">
+	<div class="support-wrapper" ng-hide="isMessageSend">
+
+		<h3 >Do you have any suggestions or advice about Diforb?<br>Fell free to contact us. We are always willing to cooperate.</h3>
+
+		<form name="formGetintouch" novalidate ng-submit="saveGetintouch()">
+			<h3>Subject</h3>
+
+			<input 	type="text" name="subject" placeholder="Put your subject here" ng-model="getintouch.subject" required></input>
+			<label 	ng-show="errorService.hasFieldError(formGetintouch, formGetintouch.subject)" class="error postError" ng-messages="formGetintouch.subject.$error">
+				<ng-messages class="error" for="formGetintouch.subject.$error" ng-show="errorService.hasFieldError(formGetintouch, formGetintouch.subject)">
+					<ng-message when="required">The subject field is required</ng-message>
+				</ng-messages>
+			</label>
+
+			<h3>Message</h3>
+
+			<textarea 	name="message" id="" cols="30" rows="10" placeholder="Put your message here" ng-model="getintouch.message" required></textarea>
+			<label 	ng-show="errorService.hasFieldError(formGetintouch, formGetintouch.message)" class="error postError" ng-messages="formGetintouch.message.$error">
+				<ng-messages class="error" for="formGetintouch.message.$error" ng-show="errorService.hasFieldError(formGetintouch, formGetintouch.message)">
+					<ng-message when="required">The message is required</ng-message>
+				</ng-messages>
+			</label>
+
+			<p 	id="alertSubjectError" class="postError" ng-show="errorMessage">{{errorMessage}}</p>
+
+			<span class="btn__subscribe-save">
+				<button type="submit" ng-disabled="formGetintouch.$invalid" >{{button}}</button>
+			</span>
+		</form>
+
+	</div>
+
+	<div class="support-wrapper message" ng-show="isMessageSend">
+		<h3>THANX BRO!</h3>
+		<h4>Thank you for your attention to our service.</h4>
+		<a ui-sref="home.libraries">Now back to work</a>
+	</div>
+</div>

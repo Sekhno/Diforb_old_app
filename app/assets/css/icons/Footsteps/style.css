@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'Footsteps-icons';
+  src:  url('fonts/Footsteps-icons.eot?c3dubr');
+  src:  url('fonts/Footsteps-icons.eot?c3dubr#iefix') format('embedded-opentype'),
+    url('fonts/Footsteps-icons.woff2?c3dubr') format('woff2'),
+    url('fonts/Footsteps-icons.ttf?c3dubr') format('truetype'),
+    url('fonts/Footsteps-icons.woff?c3dubr') format('woff'),
+    url('fonts/Footsteps-icons.svg?c3dubr#Footsteps-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="footsteps-"], [class*=" footsteps-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Footsteps-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.footsteps-extra_solid:before {
+  content: "\f300";
+}
+.footsteps-women_solid:before {
+  content: "\f301";
+}
+.footsteps-men_solid:before {
+  content: "\f302";
+}
+.footsteps-other_solid:before {
+  content: "\f303";
+}
+

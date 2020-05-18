@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'Birds-icon';
+  src:  url('fonts/Birds-icon.eot?amixse');
+  src:  url('fonts/Birds-icon.eot?amixse#iefix') format('embedded-opentype'),
+    url('fonts/Birds-icon.woff2?amixse') format('woff2'),
+    url('fonts/Birds-icon.ttf?amixse') format('truetype'),
+    url('fonts/Birds-icon.woff?amixse') format('woff'),
+    url('fonts/Birds-icon.svg?amixse#Birds-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="birds-"], [class*=" birds-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Birds-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.birds-seagul:before {
+  content: "\e901";
+}
+.birds-birds:before {
+  content: "\e902";
+}
+.birds-cuckoo:before {
+  content: "\e903";
+}
+.birds-chicken:before {
+  content: "\e900";
+}
+.birds-parrot:before {
+  content: "\b900";
+}
+.birds-turkey:before {
+  content: "\b901";
+}
+.birds-sparrow:before {
+  content: "\b902";
+}
+.birds-magpie:before {
+  content: "\b903";
+}
+.birds-owl:before {
+  content: "\b904";
+}
+.birds-pigeon:before {
+  content: "\b905";
+}
+.birds-woodpeackersing:before {
+  content: "\b906";
+}
+.birds-woodpeackercnock:before {
+  content: "\b907";
+}
+.birds-woodpecker:before {
+  content: "\b908";
+}
+.birds-other:before {
+  content: "\b909";
+}
+.birds-rooster:before {
+  content: "\b90a";
+}
+.birds-nightingale:before {
+  content: "\b90b";
+}
+.birds-goose:before {
+  content: "\b90c";
+}
+.birds-cown:before {
+  content: "\b90d";
+}
+.birds-wings:before {
+  content: "\b90e";
+}
+

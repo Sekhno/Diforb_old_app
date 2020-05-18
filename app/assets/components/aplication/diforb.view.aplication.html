@@ -1,0 +1,82 @@
+<div class="apl-content" diforb-player>
+	<div class="player">
+		<div class="player-holder">
+			<div class="player-holder-inner">
+				<div class="player-content">
+					<!-- Rever button -->
+					<div class="{{value.class}}" ng-repeat="value in radiobtns">
+						<label>
+							<input 	type="radio"
+									name="{{value.name}}"
+									value="{{value.value}}"
+									ng-click="reverBtnClick($event)"/>
+							<div class="radio"></div>
+							<div class="label-holder"><span>{{value.label}}</span></div>
+						</label>
+					</div>
+					<!-- Rever button -->
+					<!--  -->
+					<div class="player-wave">
+						<div class="player-wave-inner-holder">
+							<div class="player-wave-inner">
+								<div class="player-wave-logo" ng-class="{'download': isDownload}" ng-hide="isPlaying">
+										<span class="icon-diforb-logo" ng-hide="isDownload"></span>
+										<h1 ng-hide="isDownload">{{nameLibrary}}</h1>
+										<!-- <h2 ng-show="isFree &amp;&amp; !isDownload">by freesound</h2> -->
+								</div>
+								<canvas id="wave"></canvas>
+							</div>
+						</div>
+					</div>
+					<!--  -->
+					<!-- Play Button -->
+					<a title="play/pause" class="btn-play" play-button ng-click="btnPlayClick()">
+						<span class="icon-play"></span>
+						<span class="icon-pause"></span>
+					</a>
+					<!-- Play Button -->
+					<!-- Download Button -->
+					<a 	class="btn-gray-large getit-link notActive" getit-button ng-click="btnGetItClick()">
+						<div class="inner-holder">
+							<div class="inner" ng-class="{'price': !isFree}">
+								Download<span ng-hide="isFree">${{price}}</span>
+							</div>
+						</div>
+					</a>
+					<!-- Download Button -->
+					<!-- Pitch control -->
+					<div class="pitch-wrap" ng-class="{'left' : value.isLeft, 'right' : value.isRight}" ng-repeat="value in pitchs">
+						<div class="pitch filter-disable">
+							<div class="pitch-holder">
+								<div class="pitch-holder-inner" ng-class="{'left' : value.isLeft, 'right' : value.isRight}">
+									<input class="pitch-handler" pitch-controll ng-class="{'pitch-left' : value.isLeft, 'pitch-right' : value.isRight}" value="5" />
+								</div>
+							</div>
+						</div>
+						<div class="signature">Pitch<br>{{value.side}}</div>
+					</div>
+					<!-- Pitch control -->
+					<!-- Range control -->
+					<div class="{{value.class_out + ' '+ 'notActive range'}}" range-controll ng-repeat="value in sliders">
+						<div class="slider-range-wrap">
+							<div class="slider-range-holder">
+								<div class="{{value.class_in}}"></div>
+							</div>
+						</div>
+					</div>
+					<!-- Range control -->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- POP-UP AUTH -->
+<div class="modal-authenticated" ng-show="showModalAuthorize">
+	<div class="modal-wrapper">
+		<i class="icon-info"></i>
+		<i class="icon-close" ng-click="closeModalAuthorize()"></i>
+		<p>Only registered users can download the sounds<br><a ui-sref="login.start">Authorize please</a></p>
+	</div>
+</div>
+

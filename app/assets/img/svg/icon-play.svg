@@ -1,0 +1,8 @@
+<svg fill="url(#grad1)" height="32px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" 
+xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:rgb(10,107,169);stop-opacity:1" />
+      	<stop offset="100%" style="stop-color:rgb(59,170,207);stop-opacity:1"/>
+</linearGradient>
+<g><path d="M144,124.9L353.8,256L144,387.1V124.9 M128,96v320l256-160L128,96L128,96z"/></g>
+</svg>

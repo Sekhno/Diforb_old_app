@@ -1,0 +1,20 @@
+<div class="sound-sub-category content" custom-scroll>
+	<ul class="ul-sub-category">
+		<li title="subcategory"	class="sub-category"
+			ng-repeat="subcategory in category.subcategories | orderBy : 'order' ">
+			<div 	class="span-sub-category"
+					ng-click="dSub.clickSubCategory($event,subcategory)">
+				<span class="{{subcategory.iconClass}}"></span>
+				<span class="sound-sub-category-name">
+					<span hover-subcategory>{{subcategory.title}}</span>
+				</span>
+				<i></i>
+			</div>
+			<diforb-sound></diforb-sound>
+			<div class="line-separate"></div>
+		</li>
+	</ul>
+</div>
+
+
+

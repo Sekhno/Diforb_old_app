@@ -1,0 +1,202 @@
+@font-face {
+  font-family: 'Falling-icons';
+  src:  url('fonts/Falling-icons.eot?ifuv8p');
+  src:  url('fonts/Falling-icons.eot?ifuv8p#iefix') format('embedded-opentype'),
+    url('fonts/Falling-icons.woff2?ifuv8p') format('woff2'),
+    url('fonts/Falling-icons.ttf?ifuv8p') format('truetype'),
+    url('fonts/Falling-icons.woff?ifuv8p') format('woff'),
+    url('fonts/Falling-icons.svg?ifuv8p#Falling-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="falling-"], [class*=" falling-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Falling-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.falling-bars:before {
+  content: "\e900";
+}
+.falling-staff:before {
+  content: "\a900";
+}
+.falling-glasses:before {
+  content: "\a901";
+}
+.falling-bat:before {
+  content: "\a902";
+}
+.falling-branch:before {
+  content: "\a903";
+}
+.falling-itemdropdown:before {
+  content: "\a904";
+}
+.falling-metalboxempty:before {
+  content: "\a905";
+}
+.falling-metalboxfull:before {
+  content: "\a906";
+}
+.falling-waterbottle:before {
+  content: "\a907";
+}
+.falling-plant:before {
+  content: "\a908";
+}
+.falling-pencil:before {
+  content: "\a909";
+}
+.falling-log:before {
+  content: "\a90a";
+}
+.falling-chest:before {
+  content: "\a90b";
+}
+.falling-brushwood:before {
+  content: "\a90c";
+}
+.falling-box:before {
+  content: "\a90d";
+}
+.falling-barrel:before {
+  content: "\a90e";
+}
+.falling-phone:before {
+  content: "\a90f";
+}
+.falling-pen:before {
+  content: "\a910";
+}
+.falling-medicalbox:before {
+  content: "\a911";
+}
+.falling-flashlight:before {
+  content: "\a912";
+}
+.falling-cellphone:before {
+  content: "\a913";
+}
+.falling-plastic:before {
+  content: "\a914";
+}
+.falling-pokercard:before {
+  content: "\a915";
+}
+.falling-papyrus:before {
+  content: "\a916";
+}
+.falling-newspaper:before {
+  content: "\a917";
+}
+.falling-map:before {
+  content: "\a918";
+}
+.falling-journal:before {
+  content: "\a919";
+}
+.falling-cardbox:before {
+  content: "\a91a";
+}
+.falling-book:before {
+  content: "\a91b";
+}
+.falling-paper:before {
+  content: "\a91c";
+}
+.falling-vessel:before {
+  content: "\a91d";
+}
+.falling-suitcase:before {
+  content: "\a91e";
+}
+.falling-plate:before {
+  content: "\a91f";
+}
+.falling-marble:before {
+  content: "\a920";
+}
+.falling-itempickup:before {
+  content: "\a921";
+}
+.falling-cup:before {
+  content: "\a922";
+}
+.falling-crystal:before {
+  content: "\a923";
+}
+.falling-coinbag:before {
+  content: "\a924";
+}
+.falling-coin:before {
+  content: "\a925";
+}
+.falling-sword:before {
+  content: "\a926";
+}
+.falling-smallbox:before {
+  content: "\a927";
+}
+.falling-knife:before {
+  content: "\a928";
+}
+.falling-fuelcan:before {
+  content: "\a929";
+}
+.falling-chain:before {
+  content: "\a92a";
+}
+.falling-keys:before {
+  content: "\a92b";
+}
+.falling-metalbottle:before {
+  content: "\a92c";
+}
+.falling-metalbascket:before {
+  content: "\a92d";
+}
+.falling-gun:before {
+  content: "\a92e";
+}
+.falling-armor:before {
+  content: "\a92f";
+}
+.falling-metal:before {
+  content: "\a930";
+}
+.falling-raincoat:before {
+  content: "\a931";
+}
+.falling-leather:before {
+  content: "\a932";
+}
+.falling-gearup:before {
+  content: "\a933";
+}
+.falling-cotton:before {
+  content: "\a934";
+}
+.falling-boots:before {
+  content: "\a935";
+}
+.falling-belt:before {
+  content: "\a936";
+}
+.falling-backpack:before {
+  content: "\a937";
+}
+.falling-clothes:before {
+  content: "\a938";
+}
+

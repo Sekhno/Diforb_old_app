@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'Lib-Inteface';
+  src:  url('fonts/Lib-Inteface.eot?3a42j3');
+  src:  url('fonts/Lib-Inteface.eot?3a42j3#iefix') format('embedded-opentype'),
+    url('fonts/Lib-Inteface.woff2?3a42j3') format('woff2'),
+    url('fonts/Lib-Inteface.ttf?3a42j3') format('truetype'),
+    url('fonts/Lib-Inteface.woff?3a42j3') format('woff'),
+    url('fonts/Lib-Inteface.svg?3a42j3#Lib-Inteface') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="interface-"], [class*=" interface-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Lib-Inteface' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.interface-voice:before {
+  content: "\e910";
+}
+.interface-arrow-up:before {
+  content: "\e912";
+}
+.interface-arrow-down:before {
+  content: "\e911";
+}
+.interface-negative:before {
+  content: "\e900";
+}
+.interface-swish:before {
+  content: "\e901";
+}
+.interface-positive:before {
+  content: "\e902";
+}
+.interface-other:before {
+  content: "\e903";
+}
+.interface-snow:before {
+  content: "\e904";
+}
+.interface-digital:before {
+  content: "\e905";
+}
+.interface-percussion:before {
+  content: "\e906";
+}
+.interface-metal:before {
+  content: "\e907";
+}
+.interface-wood:before {
+  content: "\e908";
+}
+.interface-plastic:before {
+  content: "\e909";
+}
+.interface-glass:before {
+  content: "\e90a";
+}
+.interface-popup:before {
+  content: "\e90b";
+}
+.interface-musical:before {
+  content: "\e90c";
+}
+.interface-designed:before {
+  content: "\e90d";
+}
+.interface-click-extra:before {
+  content: "\e90e";
+}
+.interface-click-main:before {
+  content: "\e90f";
+}
+

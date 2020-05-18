@@ -1,0 +1,94 @@
+@font-face {
+  font-family: 'Food-icons';
+  src:  url('fonts/Food-icons.eot?vs9chy');
+  src:  url('fonts/Food-icons.eot?vs9chy#iefix') format('embedded-opentype'),
+    url('fonts/Food-icons.woff2?vs9chy') format('woff2'),
+    url('fonts/Food-icons.ttf?vs9chy') format('truetype'),
+    url('fonts/Food-icons.woff?vs9chy') format('woff'),
+    url('fonts/Food-icons.svg?vs9chy#Food-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="food-"], [class*=" food-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Food-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.food-chew:before {
+  content: "\e906";
+}
+.food-swallowing:before {
+  content: "\e903";
+}
+.food-plastic-bottle:before {
+  content: "\e904";
+}
+.food-waterbottle:before {
+  content: "\e905";
+}
+.food-scuzzy:before {
+  content: "\e901";
+}
+.food-choke:before {
+  content: "\e902";
+}
+.food-slurp:before {
+  content: "\e900";
+}
+.food-vomiting:before {
+  content: "\f900";
+}
+.food-boiling:before {
+  content: "\f901";
+}
+.food-vegetables:before {
+  content: "\f902";
+}
+.food-snacks:before {
+  content: "\f903";
+}
+.food-meat:before {
+  content: "\f904";
+}
+.food-fruit:before {
+  content: "\f905";
+}
+.food-dessert:before {
+  content: "\f906";
+}
+.food-poridge:before {
+  content: "\f907";
+}
+.food-soup:before {
+  content: "\f908";
+}
+.food-spoon:before {
+  content: "\f909";
+}
+.food-fork:before {
+  content: "\f90a";
+}
+.food-drinking:before {
+  content: "\f90b";
+}
+.food-coocking:before {
+  content: "\f90c";
+}
+.food-foodbite:before {
+  content: "\f90d";
+}
+.food-foodactions:before {
+  content: "\f90e";
+}
+

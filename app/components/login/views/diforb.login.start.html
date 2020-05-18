@@ -1,0 +1,17 @@
+<div id="form--author--signin">
+	<h3 class="logo-head"><i class="icon-diforb-logo-slogan"></i></h3>
+
+	<a id="login--external--facebook" ng-click="authExternalProvider('Facebook')"><i class="icon-facebook"></i>Sign in with facebook</a>
+
+	<a id="login--external--google" ng-click="authExternalProvider('Google')"><i class="icon-google"></i>Sign in with google</a>
+
+    <a id="sign-up" ui-sref="login.signin">Login</a>
+	<span>Don't have an account yet?</span>
+    <a id="sign-in" ui-sref="login.signup">CREATE</a>
+
+    <span id="alert" class="slide" ng-show="message">{{message}}</span>
+
+</div>
+<button id="btnPlayVideo" ng-click="watchVideo($event)">Watch video</button>
+
+

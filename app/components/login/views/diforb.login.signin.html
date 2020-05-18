@@ -1,0 +1,31 @@
+<div id="form--author--login" ng-class="{'shake': errorMessage}">
+
+	<div ng-show="infoMessage">
+		<h3>{{infoMessage.title}}</h3>
+		<p>{{infoMessage.message}}</p>
+		<button id="logOut" ui-sref="login.signin">Log in</button>
+	</div>
+
+	<form name="formlogin" id="form--login">
+
+		<h3>Diforb account</h3>
+
+		<input type="hidden" name="grant_type" value="password" />
+
+		<input id="login" type="email" name="username" placeholder="Email" ng-model="loginData.userName" ng-class="{ 'error': errorService.hasFieldError(formlogin, formlogin.username) }" required/><br>
+		<label ng-show="errorService.hasFieldError(formlogin, formlogin.username)" class="error" ng-messages="formlogin.username.$error" ng-messages-include="app/components/login/views/messages.html"></label>
+
+		<input id="password" name="password" type="password" ng-model="loginData.password" placeholder=" Password" required ng-class="{ error: errorService.hasFieldError(formlogin, formlogin.password) }" /><br>
+		<label ng-show="errorService.hasFieldError(formlogin, formlogin.password)" class="error" ng-messages="formlogin.password.$error" ng-messages-include="app/components/login/views/messages.html"></label>
+
+
+		<p id="alert" class="slide" ng-show="errorMessage">{{errorMessage}}</p>
+
+		<a class="btn-back" ui-sref="login.start"><span class="icon-undo"></span>Back</a>
+
+		<button id="logIn" ng-click="login($event)">Log in</button><br>
+
+		<a class="btn-resetpassword" ui-sref="login.resetpassword">Reset password</a>
+	</form>
+</div>
+<spinner-process ng-show="spinnerShow"></spinner-process>

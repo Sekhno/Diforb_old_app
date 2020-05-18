@@ -1,0 +1,199 @@
+@font-face {
+  font-family: 'Pickup-icons';
+  src:  url('fonts/Pickup-icons.eot?hje61t');
+  src:  url('fonts/Pickup-icons.eot?hje61t#iefix') format('embedded-opentype'),
+    url('fonts/Pickup-icons.woff2?hje61t') format('woff2'),
+    url('fonts/Pickup-icons.ttf?hje61t') format('truetype'),
+    url('fonts/Pickup-icons.woff?hje61t') format('woff'),
+    url('fonts/Pickup-icons.svg?hje61t#Pickup-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="pickup-"], [class*=" pickup-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Pickup-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.pickup-staff:before {
+  content: "\a900";
+}
+.pickup-glasses:before {
+  content: "\a901";
+}
+.pickup-bat:before {
+  content: "\a902";
+}
+.pickup-branch:before {
+  content: "\a903";
+}
+.pickup-itemdropdown:before {
+  content: "\a904";
+}
+.pickup-metalboxempty:before {
+  content: "\a905";
+}
+.pickup-metalboxfull:before {
+  content: "\a906";
+}
+.pickup-waterbottle:before {
+  content: "\a907";
+}
+.pickup-plant:before {
+  content: "\a908";
+}
+.pickup-pencil:before {
+  content: "\a909";
+}
+.pickup-log:before {
+  content: "\a90a";
+}
+.pickup-chest:before {
+  content: "\a90b";
+}
+.pickup-brushwood:before {
+  content: "\a90c";
+}
+.pickup-box:before {
+  content: "\a90d";
+}
+.pickup-barrel:before {
+  content: "\a90e";
+}
+.pickup-phone:before {
+  content: "\a90f";
+}
+.pickup-pen:before {
+  content: "\a910";
+}
+.pickup-medicalbox:before {
+  content: "\a911";
+}
+.pickup-flashlight:before {
+  content: "\a912";
+}
+.pickup-cellphone:before {
+  content: "\a913";
+}
+.pickup-plastic:before {
+  content: "\a914";
+}
+.pickup-pokercard:before {
+  content: "\a915";
+}
+.pickup-papyrus:before {
+  content: "\a916";
+}
+.pickup-newspaper:before {
+  content: "\a917";
+}
+.pickup-map:before {
+  content: "\a918";
+}
+.pickup-journal:before {
+  content: "\a919";
+}
+.pickup-cardbox:before {
+  content: "\a91a";
+}
+.pickup-book:before {
+  content: "\a91b";
+}
+.pickup-paper:before {
+  content: "\a91c";
+}
+.pickup-vessel:before {
+  content: "\a91d";
+}
+.pickup-suitcase:before {
+  content: "\a91e";
+}
+.pickup-plate:before {
+  content: "\a91f";
+}
+.pickup-marble:before {
+  content: "\a920";
+}
+.pickup-itempickup:before {
+  content: "\a921";
+}
+.pickup-cup:before {
+  content: "\a922";
+}
+.pickup-crystal:before {
+  content: "\a923";
+}
+.pickup-coinbag:before {
+  content: "\a924";
+}
+.pickup-coin:before {
+  content: "\a925";
+}
+.pickup-sword:before {
+  content: "\a926";
+}
+.pickup-smallbox:before {
+  content: "\a927";
+}
+.pickup-knife:before {
+  content: "\a928";
+}
+.pickup-fuelcan:before {
+  content: "\a929";
+}
+.pickup-chain:before {
+  content: "\a92a";
+}
+.pickup-keys:before {
+  content: "\a92b";
+}
+.pickup-metalbottle:before {
+  content: "\a92c";
+}
+.pickup-metalbascket:before {
+  content: "\a92d";
+}
+.pickup-arms:before {
+  content: "\a92e";
+}
+.pickup-armor:before {
+  content: "\a92f";
+}
+.pickup-metal:before {
+  content: "\a930";
+}
+.pickup-raincoat:before {
+  content: "\a931";
+}
+.pickup-leather:before {
+  content: "\a932";
+}
+.pickup-gearup:before {
+  content: "\a933";
+}
+.pickup-cotton:before {
+  content: "\a934";
+}
+.pickup-boots:before {
+  content: "\a935";
+}
+.pickup-belt:before {
+  content: "\a936";
+}
+.pickup-backpack:before {
+  content: "\a937";
+}
+.pickup-clothes:before {
+  content: "\a938";
+}
+

@@ -1,0 +1,200 @@
+body {
+	margin: 0;
+	font-family: 'Play', sans-serif;
+	font-size: 100%;
+	line-height: 100%;
+	box-sizing: border-box;
+}
+
+#paypal-body {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	background: -webkit-radial-gradient(50% 50%, circle farthest-side , #4ebffb 0%, #217AB1);
+	background: radial-gradient(circle at center, #4ebffb 0%,#217AB1 100%);
+	background-attachment: fixed;
+	border:1px solid transparent;
+}
+
+.paypal__form {
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	text-transform: uppercase;
+	-webkit-transform: translate3D(-50%,-50%,0);
+			transform: translate3D(-50%,-50%,0);
+	opacity: 0;
+}
+
+.paypal__form form {
+	margin-right: -5px;
+	position: relative;
+	top: 0;
+	-webkit-transition: top .3s;
+			transition: top .3s;
+}
+
+.paypal__form form:hover {
+	top:-5px;
+}
+
+.fadeInForm {
+	-webkit-animation-name: fadeInForm;
+			animation-name: fadeInForm;
+	-webkit-animation-duration: 1s;
+			animation-duration: 1s;
+	-webkit-animation-delay: 2.5s;
+			animation-delay: 2.5s;
+	-webkit-animation-fill-mode: forwards;
+			animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeInForm {
+	from {
+		opacity: 0
+	}
+	to {
+		opacity: 1
+	}
+}
+@keyframes fadeInForm {
+	from {
+		opacity: 0
+	}
+	to {
+		opacity: 1
+	}
+}
+
+.paypal__message {
+	margin: 3px;
+	padding: 15px 0;
+	text-align: center;
+	color: #69DAFF;
+	background-color: #103D58;
+	border-radius: 5px;
+	box-shadow: 0 -4px rgba(0,0,0,0.8) inset;
+	opacity: 0;
+}
+
+.paypal__message > span {
+	position: relative;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+	border-radius: 50%;
+	border: 1px solid #1F77AD;
+}
+.paypal__message > span > span {
+	display: inherit;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	-webkit-transform: translate(-50%,-50%);
+			transform: translate(-50%,-50%);
+
+}
+
+.fadeInMessage {
+	-webkit-animation-name: fadeInMessage;
+	        	animation-name: fadeInMessage;
+	-webkit-animation-duration: 2s;
+	        	animation-duration: 2s;
+	-webkit-animation-delay: .5s;
+	        	animation-delay: .5s;
+	-webkit-animation-fill-mode: forwards;
+	        	animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeInMessage {
+	0% {
+		opacity: 0
+	}
+	33% {
+		opacity: 1
+	}
+	66% {
+		opacity: 0
+	}
+	100% {
+		opacity: 1
+	}
+}
+
+@keyframes fadeInMessage {
+	0% {
+		opacity: 0
+	}
+	33% {
+		opacity: 1
+	}
+	66% {
+		opacity: 0
+	}
+	100% {
+		opacity: 1
+	}
+}
+
+img.logo {
+	position: absolute;
+	left:50%;
+	bottom: 0;
+	width:100px;
+	-webkit-transform: translate3D(-50%,-50%,0);
+			transform: translate3D(-50%,-50%,0);
+
+}
+.separate-element {
+	height: 1px;
+	width: 90%;
+	margin: auto;
+	background-color: #BBBABA;
+}
+.triangle-element {
+	position: absolute;
+	display: inline-block;
+	margin: -50px 0px 0 -16px;
+	width: 25px;
+	height: 24px;
+	border: 4px solid #30a0c5;
+	border-top: 4px solid transparent;
+	border-right: 4px solid transparent;
+	background-color: #F6F6F6;
+	background-clip: content-box;
+	-webkit-transform: rotate(-35deg) skew(20deg);
+			transform: rotate(-35deg) skew(20deg);
+}
+.paypal__form h1 {
+	font-size: 1.3em;
+	font-weight: 100;
+	letter-spacing: 0;
+	color: white;
+}
+
+.paypal__form h2 {
+	margin: 15px 0;
+	font-size: 1em;
+	font-weight: 100;
+	color: #BBBABA;
+}
+
+.paypal__form p {
+	font-size: 1.5em;
+	color: #257CB2;
+}
+
+.paypal__form--price {
+	margin-bottom: 30px;
+	border-radius: 7px;
+	border: 4px solid #30a0c5;
+	background-color: #F6F6F6;
+	background-clip: content-box;
+}
+
+.paypal__form--price img{
+	margin: 15px 0;
+}

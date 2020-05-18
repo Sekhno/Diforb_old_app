@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Diforb PayPal</title>
+	<link href="assets/css/paypal.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Play:400,700' rel='stylesheet'>
+</head>
+<body id="paypal-body">
+	<div class="paypal__message fadeInMessage">
+		<span><span>!</span></span>
+		Attention! please don't close this window till check out is done. It will close automatically before start download.
+	</div>
+	<div class="paypal__form fadeInForm">
+		<h1>get your sound</h1>
+		<div class="paypal__form--price">
+			<h2>total price:</h2>
+			<div class="separate-element"></div>
+			<p>$<span id="price_ui"></span></p>
+			<div class="separate-element"></div>
+			<img src="assets/img/cards.svg" alt="cards">
+		</div>
+		<div class="triangle-element"></div>
+		<!-- <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post"> -->
+		<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+			<!-- Specify a Buy Now button. -->
+			<input type="hidden" name="cmd" value="_xclick" />
+
+			<!-- Identify your business so that you can collect the payments. -->
+			<!-- <input type="hidden" name="business" value="diforb.dev-facilitator@gmail.com" /> -->
+			<input type="hidden" name="business" value="diforbpay@gmail.com" />
+
+			<!-- Specify details about the item that buyers will purchase. -->
+			<input type="hidden" id="item_name" name="item_name" value="" />
+			<input type="hidden" id="item_number" name="item_number" value="" />
+
+			<!-- <input type="hidden" name="amount" value="0.01" /> -->
+			<input id="price" type="hidden" name="amount" value="1" />
+			<input type="hidden" name="currency_code" value="USD" />
+
+			<!-- Specify a URL for the payment confirmation page and a page that is displayed
+			     if the user cancels a transaction. Also specify a URL that PayPal can post IPN
+			     messages to (see explanation below). -->
+			<!-- <input type="hidden" name="return" value="http://diforb_app/payment/paypal/complete.html" /> -->
+			<input type="hidden" name="return" value="http://diforb.com/payment/paypal/complete.html" />
+			<input type="hidden" name="cancel_return" value="http://diforb.com/payment/paypal/cancel.html" />
+			<!-- <input type="hidden" name="notify_url" value="http://xslfop.com/order/ipn" />  -->
+
+			<!-- Do not prompt customers to include a note with their payment. -->
+			<input type="hidden" name="no_note" value="1" />
+
+			<!-- Display the payment button. -->
+			<input type="image" name="submit" src="assets/img/pay-button.png" alt="PayPal — The safer, easier way to pay online." />
+			<img src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" alt="" />
+		</form>
+	</div>
+
+	<img src="assets/img/logo.svg" alt="logo" class="logo">
+
+	<script src="assets/js/paymentPayPal.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<div id="form--author--signup" ng-class="{shake: errorMessage}">
+
+	<div ng-show="infoMessage">
+		<h3>{{infoMessage.title}}</h3>
+		<p>{{infoMessage.message}}</p>
+		<button id="logOut" ui-sref="login.signin">Log in</button>
+	</div>
+
+	<form id="form--signup" name="formsignup" ng-hide="infoMessage">
+
+	     	<h3>Diforb user Sign Up</h3>
+
+	     	<input type="hidden" name="grant_type" value="password"/>
+
+	     	<input id="login" type="email" name="username" ng-model="registerData.userName" placeholder="Email" ng-class="{ error: errorService.hasFieldError(formsignup, formsignup.username) }" required/><br>
+     		<label ng-show="errorService.hasFieldError(formsignup, formsignup.username) " class="error" ng-messages="formsignup.username.$error" ng-messages-include="app/components/login/views/messages.html"></label>
+
+	     	<input id="password" name="password" ng-model="registerData.password" type="password" minlength="6" placeholder=" Password" ng-class="{ error: errorService.hasFieldError(formsignup, formsignup.password) }" required/><br>
+     		<label ng-show="errorService.hasFieldError(formsignup, formsignup.password)" class="error" ng-messages="formsignup.password.$error" ng-messages-include="app/components/login/views/messages.html"></label>
+
+	     	<input id="confirmpassword" name="confirmpassword" ng-model="registerData.confirmpassword" type="password" minlength="6" compare-to="registerData.password" placeholder="Confirm password" ng-class="{ error: errorService.hasFieldError(formsignup, formsignup.confirmpassword) }" required/><br>
+     	 	<label ng-show="errorService.hasFieldError(formsignup, formsignup.confirmpassword)" class="error" ng-messages="formsignup.confirmpassword.$error" ng-messages-include="app/components/login/views/messages.html"></label>
+
+	     	<p id="alertSignUp" ng-show="errorMessage">{{errorMessage}}</p>
+
+	     	<a class="btn-back" ui-sref="login.start"><span class="icon-undo"></span>Back</a>
+
+	     	<button id="signUp" type="submit" ng-click="register($event)" >Sign up</button><br>
+	</form>
+</div>
+<spinner-process ng-show="spinnerShow"></spinner-process>

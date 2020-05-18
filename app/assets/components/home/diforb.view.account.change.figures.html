@@ -1,0 +1,41 @@
+<div class="dashboard--wrapper account--wrapper">
+	<form name="newPasswordForm">
+		<div class="account--section reset--password">
+			<h3>Change Password</h3>
+
+			<input name="oldPassword" type="password"
+					placeholder="Old password" ng-model="newPassword.oldPassword" required>
+
+			<label ng-show="errorService.hasFieldError(newPasswordForm, newPasswordForm.oldPassword)" class="error postError">
+				<ng-messages for="newPasswordForm.oldPassword.$error" ng-show="errorService.hasFieldError(newPasswordForm, newPasswordForm.oldPassword)">
+				<ng-message when="required">The New Password field is required</ng-message>
+				</ng-messages>
+			</label>
+
+			<input name="newPassword" type="password"
+					placeholder="New password"  ng-model="newPassword.newPassword" required>
+
+			<label ng-show="errorService.hasFieldError(newPasswordForm, newPasswordForm.newPassword)" class="error postError">
+				<ng-messages for="newPasswordForm.newPassword.$error" ng-show="errorService.hasFieldError(newPasswordForm, newPasswordForm.newPassword)">
+					<ng-message when="required">The New Password field is required</ng-message>
+				</ng-messages>
+			</label>					
+
+
+			<input name="confirmPassword" type="password"
+					placeholder="Confirm new password" ng-model="newPassword.confirmPassword" required compare-to="newPassword.newPassword">
+
+			<label ng-show="errorService.hasFieldError(newPasswordForm, newPasswordForm.confirmPassword)" class="error postError">
+				<ng-messages for="newPasswordForm.confirmPassword.$error" ng-show="errorService.hasFieldError(newPasswordForm, newPasswordForm.confirmPassword)">
+					<ng-message when="required">The Confirm Password field is required</ng-message>
+				 	<ng-message when="compareTo">Must match the previous entry</ng-message>
+				</ng-messages>
+			</label>		
+
+			<p id="newPasswordError" class="postError" ng-show="errorMessage">{{errorMessage}}</p>
+			<span class="btn__subscribe-save" ng-click="changePassword($event)">
+				<button>{{saveBtnText}}</button>
+			</span>
+		</div>
+	</form>
+</div>

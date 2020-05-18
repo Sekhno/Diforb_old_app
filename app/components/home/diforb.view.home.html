@@ -1,0 +1,62 @@
+<section class="wrapper--dashboard">
+	<div class="container--dashboard" diforb-home>
+		<div  class="dashboard" ng-class="{'infohide' : !library, 'infoshow' : library}">
+			<header class="dashboard--header">
+				<span class="dashboard--burger" ng-click="dh.openMenuHome()" ng-show="!library"><i class="icon-menu"></i></span>
+				<a ui-sref="home.libraries" class="dashboard--close" ng-show="library" ng-click="libraryNull()">&times;</a>
+				<!-- ui-header -->
+				<div ui-view="header" id="header"></div>
+				<!-- ui-header -->
+			</header>
+			<div class="wrapper--section">
+				<div id="section" wrapper-section ng-class="{'hide-section' : !library, 'show-section' : library}">
+					<!-- ui-section -->
+					<div ui-view="section"></div>
+					<!-- ui-section -->
+				</div>
+			</div>
+			<div id="figures" class="wpapper--figures" wrapper-figures>
+				<!-- ui-figures -->
+				<div ui-view="figures"></div>
+				<!-- ui-figures -->
+			</div>
+		</div>
+		<div class="dashboard--menu">
+			<div class="dashboard--menu--logo">
+				<a 	ui-sref="home.libraries" class="menu-logo" ng-click="libraryNull()"><span class="icon-diforb-logo"></span></a>
+				<a ng-click="dh.closeMenuHome()" class="menu-close"><span>&times;</span></a>
+			</div>
+			<div class="dashboard--menu--user">
+				<span class="icon-avatar" ></span>
+				<div class="dashboard--title" ng-if="isAuthentificated">
+					<h3>hello</h3>
+					<h2>{{username}}</h2>
+				</div>
+				<div class="dashboard--user--tools" ng-if="isAuthentificated">
+					<a 	ui-sref="home.account" ng-click="libraryNull()"><i class="icon-cog"></i></a>
+					<a ng-click="dc.logOut()"><i class="icon-logout"></i></a>
+				</div>
+				<a class="link-registration" ui-sref="login.start" ng-if="!isAuthentificated">Log In or Register</a>
+			</div>
+			<div class="dashboard--menu--links">
+				<a ui-sref="home.libraries" ng-click="libraryNull()" ng-class="{'active': currentStateName == 'home.libraries' || currentStateName == 'home.libraries.libname'}"><i class="icon-libs"></i>Libraries</a>
+				<a ui-sref="home.how.video" ng-click="libraryNull()" ng-class="{'active': currentStateName == 'home.how.video'}"><i class="icon-play"></i>Watch Tutorial</a>
+				<a ui-sref="home.how.faq" ng-click="libraryNull()" ng-class="{'active': currentStateName == 'home.how.faq'}"><i class="icon-info"></i>F.A.Q.</a>
+				<ul>
+					<li><a ui-sref="home.libraries" ng-click="libraryNull()">About</a></li>
+					<li><a ui-sref="home.license" ng-click="libraryNull()" ng-class="{'active': currentStateName == 'home.license'}">License agreement</a></li>
+					<li><a ui-sref="home.privacy" ng-click="libraryNull()" ng-class="{'active': currentStateName == 'home.privacy'}">Privacy policy</a></li>
+				</ul>
+				<a ui-sref="home.support" ng-click="libraryNull()" ng-class="{'active': currentStateName == 'home.support'}"><i class="creatures-talk"></i>Give us your feedback</a>
+				<a ui-sref="home.get" ng-click="libraryNull()" ng-class="{'active': currentStateName == 'home.get'}"><i class="puzzle-spell"></i>WISHLIST</a>
+				<div class="social-links home">
+					<a 	href="https://www.facebook.com/diforb/" target="_blank"><i class="icon-facebook"></i></a>
+					<a 	href="https://plus.google.com/u/4/b/101715622049611220150/101715622049611220150?pageId=101715622049611220150" target="_blank"><i class="icon-google"></i></a>
+					<a 	href="https://twitter.com/diforb" target="_blank"><i class="icon-twitter"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+

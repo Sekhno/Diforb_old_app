@@ -1,0 +1,12 @@
+[
+	{
+		"isLeft": true,
+		"isRight": false,
+		"side": "A"
+	},
+	{
+		"isLeft": false,
+		"isRight": true,
+		"side": "B"
+	}
+]
