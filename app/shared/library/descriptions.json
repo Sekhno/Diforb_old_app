@@ -15,8 +15,28 @@
             },
             {
                 "title": "Extra",
-                "icon": "",
+                "icon": "interface-click-extra",
                 "soundCount": 35
+            },
+            {
+                "title": "Pop Up",
+                "icon": "interface-popup",
+                "soundCount": 10
+            },
+            {
+                "title": "Swish",
+                "icon": "interface-swish",
+                "soundCount": 5
+            },
+            {
+                "title": "Music",
+                "icon": "interface-musical",
+                "soundCount": 45
+            },
+            {
+                "title": "Design",
+                "icon": "interface-designed",
+                "soundCount": 65
             }
         ]
     },

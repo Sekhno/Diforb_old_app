@@ -62,13 +62,14 @@
 		}
 
 		function getSidesByLibName(name){
-			var url = DiforbConstans.baseApiUrl + "/api/library/name/" + name + "/sides";
+			// var url = DiforbConstans.baseApiUrl + "/api/library/name/" + name + "/sides";
+			var url = 'backend/library/' + name + '/data.json';
 			return $resource(url, {});
 		}
 
 		function getLibraryDescription(){
 			// var url = DiforbConstans.baseApiUrl + "/api/library/descriptions/";
-			var url = "app/shared/library/descriptions.json";
+			var url = 'app/shared/library/descriptions.json';
 			return $resource(url, {});
 		}
 	};
