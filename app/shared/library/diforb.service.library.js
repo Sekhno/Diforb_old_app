@@ -67,8 +67,8 @@
 		}
 
 		function getLibraryDescription(){
-			var url = DiforbConstans.baseApiUrl + "/api/library/descriptions/";
-			//var url = "app/shared/library/libraries.json";
+			// var url = DiforbConstans.baseApiUrl + "/api/library/descriptions/";
+			var url = "app/shared/library/descriptions.json";
 			return $resource(url, {});
 		}
 	};
