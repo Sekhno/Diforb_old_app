@@ -6,8 +6,128 @@
         "author": "Diforb",
         "image": "interface.jpg",
         "audio": "Interface_tizer_short.mp3",
-        "categories": {
-            "title": "Main"
-        }
+        "isComingSoon": false,
+        "categories": [
+            {
+                "title": "Main",
+                "icon": "",
+                "soundCount": 36
+            },
+            {
+                "title": "Extra",
+                "icon": "",
+                "soundCount": 35
+            }
+        ]
+    },
+    {
+        "name": "Destruction",
+        "title": "Destruction",
+        "description": "In this library sounds of various objects blows, breaking, and destructions are presented. Wooden, metal, plastic, paper and other elements will break at your command. This library is perfectly suitable for movies, ads and video games .",
+        "author": "Diforb",
+        "image": "destruction.jpg",
+        "audio": "Destruction_tizer.mp3",
+        "isComingSoon": false,
+        "categories": []
+    },
+    {
+        "name": "Birds",
+        "title": "Birds",
+        "description": "Here you can find variety of birds sounds such as crows, parrots, chickens and others.",
+        "author": "Free",
+        "image": "birds.jpg",
+        "audio": "Birds_tizer.mp3",
+        "isComingSoon": false,
+        "categories": []
+    },
+    {
+        "name": "Puzzle",
+        "title": "Puzzle",
+        "description": "In this library sounds of unsolved riddles, detective investigations, figures row collecting, various puzzles and other adventures are hidden. Also, here you can find musical jingles to strengthen pleasure from victories and smooth grief from defeats.",
+        "author": "Diforb",
+        "image": "puzzle.jpg",
+        "audio": "Puzzle_tizer.mp3",
+        "isComingSoon": false,
+        "categories": []
+    },
+    {
+        "name": "Creatures",
+        "title": "Creatures",
+        "description": "Zombies, orcs, goblins and other mystical beings are already almost ready to break away from your loudspeakers and become a part of your project.",
+        "author": "Diforb",
+        "image": "creatures.jpg",
+        "audio": "Creatures_tizer.mp3",
+        "isComingSoon": false,
+        "categories": []
+    },
+    {
+        "name": "PickUp",
+        "title": "PickUp",
+        "description": "The majority of games make you grab various objects and artifacts to go ahead. In this library, you can find sounds reproducing picking up different stuff like first-aid kits, cartridges, coins, the weapon and other important objects. These sounds are perfectly suitable for games of any genres.",
+        "author": "Diforb",
+        "image": "pick-up.jpg",
+        "audio": "Pick_up_tizer.mp3",
+        "isComingSoon": false,
+        "categories": []
+    },
+    {
+        "name": "Falling",
+        "title": "Falling",
+        "description": "Here you can hear sounds of various objects falling . First-aid kits, backpacks, guns, rifles, keys, coins and many other things will fall under your direction. These sounds are perfectly  suitable for games, commercials and animation video.",
+        "author": "Diforb",
+        "image": "falling.jpg",
+        "audio": "Falling_tizer.mp3",
+        "isComingSoon": false,
+        "categories": []
+    },
+    {
+        "name": "Cats-N-Dogs",
+        "title": "Cats-N-Dogs",
+        "description": "Here is a huge set of barking, growl, howl, hissing, snore and other sounds which are made by cats and dogs.",
+        "author": "Free",
+        "image": "cats-and-dogs.jpg",
+        "audio": "Cats-N-Dogs_tizer.mp3",
+        "isComingSoon": false,
+        "categories": []
+    },
+    {
+        "name": "Food",
+        "title": "Food",
+        "description": "We recorded different  sounds related to food and its cooking.Chewing, swallowing , boiling and many other sounds are waiting for you in the library .",
+        "author": "Diforb",
+        "image": "food.jpg",
+        "audio": "Food_tizer.mp3",
+        "isComingSoon": false,
+        "categories": []
+    },
+    {
+        "name": "Footsteps",
+        "title": "Footsteps",
+        "description": "The library includes three submenus - walking, running and landing. Besides, a large number of men's and women's shoes you can find steps of various beings presented in a sound set - paws, hoofs, robots, retro sounds. Combining different steps with various additional sounds, you have a chance to reproduce the movement of any object on the screen most precisely.",
+        "author": "Diforb",
+        "image": "footsteps.jpg",
+        "audio": "Footsteps_tizer_mp3.mp3",
+        "isComingSoon": true,
+        "categories": []
+    },
+    {
+        "name": "Ambience",
+        "title": "Ambience",
+        "description": "Natural Ambience is a universal collection of high-quality sounds which can help you create the sound atmosphere of various locations such as a city, a forest, a beach, a cave, the underwater world and many other things. Thanks to the unique system of combination, you get the opportunity to create hundreds of original sounds.",
+        "author": "Diforb",
+        "image": "ambience.jpg",
+        "audio": "Natural_ambient_tizer_short.mp3",
+        "isComingSoon": true,
+        "categories": []
+    },
+    {
+        "name": "Zoo",
+        "title": "Zoo",
+        "description": "Here you can hear sounds of various wild and dangerous animals.You don't  need to risk your health in order to record them - we did it for you. ",
+        "author": "Diforb",
+        "image": "zoo.jpg",
+        "audio": "Zoo_tizer.mp3",
+        "isComingSoon": false,
+        "categories": []
     }
 ]
