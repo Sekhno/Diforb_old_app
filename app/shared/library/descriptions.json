@@ -10,7 +10,7 @@
         "categories": [
             {
                 "title": "Main",
-                "icon": "",
+                "icon": "interface-click-main",
                 "soundCount": 36
             },
             {
