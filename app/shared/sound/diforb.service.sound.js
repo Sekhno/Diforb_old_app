@@ -24,8 +24,9 @@
 			}
 			return soundUrl;
 		}
-		function getFileList(soundId,categoryId){
-			var fileListUrl = DiforbConstans.baseApiUrl + '/api/file/list/' + categoryId + "/" + soundId;
+		function getFileList(libraryId, categoryId, subCategoryId, soundId){
+			// var fileListUrl = DiforbConstans.baseApiUrl + '/api/file/list/' + categoryId + "/" + soundId;
+			var fileListUrl = 'backend/storage/Sounds/' + libraryId + '/' + categoryId + '/' + subCategoryId + '/' + soundId + '.wav';
 			return $resource(fileListUrl, {});
 		}
 		return this;

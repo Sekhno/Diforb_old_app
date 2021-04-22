@@ -97,7 +97,7 @@
 					webAudioService.setSoundNamePrefix(soundPrefix);
 
 					// Get File List
-					soundService.getFileList(sound.soundId, sound.categoryId)
+					soundService.getFileList(soundPrefixData.library, soundPrefixData.categoryName, soundPrefixData.subCategoryName, sound.soundId)
 						.query().$promise.then( function(fileList)
 					{
 

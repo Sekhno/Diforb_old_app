@@ -21,7 +21,8 @@
                                         "title": "Glass",
                                         "sounds": [
                                             {
-                                                "title": "Glass_01"
+                                                "title": "Glass_01",
+                                                "id": "Interface_Main_Glass_01"
                                             },
                                             {
                                                 "title": "Glass_02"
