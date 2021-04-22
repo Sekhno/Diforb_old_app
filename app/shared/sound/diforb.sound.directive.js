@@ -97,10 +97,11 @@
 					webAudioService.setSoundNamePrefix(soundPrefix);
 
 					// Get File List
-					soundService.getFileList(soundPrefixData.library, soundPrefixData.categoryName, soundPrefixData.subCategoryName, sound.soundId)
-						.query().$promise.then( function(fileList)
-					{
+					// soundService.getFileList(soundPrefixData.library, soundPrefixData.categoryName, soundPrefixData.subCategoryName, sound.soundId)
+					// 	.query().$promise.then( function(fileList)
+					// {
 
+						var fileList = ['backend/storage/Sounds/' + libraryId + '/' + categoryId + '/' + subCategoryId + '/' + soundId + '.wav'];
 						var libSide = undefined;
 
 						if (sound.soundSide.isLeft) {
@@ -113,7 +114,7 @@
 
 						webAudioSound.AddFiles("", fileList);
 						webAudioSound.Read();
-					});
+					// });
 				};
 
 				function clickSoundActive()
