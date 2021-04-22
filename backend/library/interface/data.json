@@ -9,6 +9,7 @@
                 "isLeft": true,
                 "soundGroups": [
                     {
+                        "categoryClass": "left",
                         "name": "left",
                         "categories": [
                             {
@@ -44,6 +45,7 @@
                 
             },
             {
+                "categoryClass": "right",
                 "isRight": true,
                 "soundGroups": [
                     {
