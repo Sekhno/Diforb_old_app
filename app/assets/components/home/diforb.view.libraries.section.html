@@ -12,10 +12,10 @@
 				<span><a ng-href="{{library.icon}}" target="_blank">(License)</a></span>
 			</span>
 		</h4>
-		<div 	class="dashboard--btn-play" ng-class="{'disable': library.audio === null}"></div>
-		<a 	ng-href="/Diforb_old_app/#/library/{{::library.name | lowercase}}"
-				ng-click="deleteClassLoaded()" class="dashboard--btn-launch" target="_blank"
-				ng-if="!library.isComingSoon&amp;&amp;desktop&amp;&amp;!isSafaryBrowser">launch</a>
+		<div class="dashboard--btn-play" ng-class="{'disable': library.audio === null}"></div>
+		<a 	ng-href="{{'/Diforb_old_app/#/library/' + ::library.name | lowercase}}"
+			ng-click="deleteClassLoaded()" class="dashboard--btn-launch" target="_blank"
+			ng-if="!library.isComingSoon&amp;&amp;desktop&amp;&amp;!isSafaryBrowser">launch</a>
 		<a  class="dashboard--btn-launch" ng-if="!library.isComingSoon&amp;&amp;!desktop&amp;&amp;!isSafaryBrowser">launch
 			<div class="tooltip-launch">Please use desktop.<br>The mobile is comming.</div>
 		</a>
