@@ -44,11 +44,11 @@
                 ]
                 
             },
-            {
-                "categoryClass": "right",
+            { 
                 "isRight": true,
                 "soundGroups": [
                     {
+                        "categoryClass": "right",
                         "name": "right",
                         "categories": [
                             {
