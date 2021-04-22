@@ -46,8 +46,36 @@
                 "soundGroups": [
                     {
                         "name": "Main",
-                        "categoryClass": "",
-                        "categories": []
+                        "categoryClass": "interface-click-main",
+                        "categories": [
+                            {
+                                "iconClass": "interface-glass",
+                                "title": "Glass",
+                                "subcategories": [
+                                    {
+                                        "iconClass": "",
+                                        "title": "",
+                                        "sounds": [
+                                            {
+                                                "title": "Glass_01"
+                                            },
+                                            {
+                                                "title": "Glass_02"
+                                            },
+                                            {
+                                                "title": "Glass_03"
+                                            },
+                                            {
+                                                "title": "Glass_04"
+                                            },
+                                            {
+                                                "title": "Glass_05"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ]
             }
