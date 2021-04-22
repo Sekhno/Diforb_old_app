@@ -6,18 +6,18 @@
         "price": 3,
         "sides": [
             {
+                "isLeft": true,
                 "soundGroups": [
                     {
-                        "name": "Main",
-                        "categoryClass": "interface-click-main",
+                        "name": "left",
                         "categories": [
                             {
-                                "iconClass": "interface-glass",
-                                "title": "Glass",
+                                "iconClass": "interface-click-main",
+                                "title": "Main",
                                 "subcategories": [
                                     {
-                                        "iconClass": "",
-                                        "title": "",
+                                        "iconClass": "interface-glass",
+                                        "title": "Glass",
                                         "sounds": [
                                             {
                                                 "title": "Glass_01"
@@ -41,20 +41,21 @@
                         ]
                     }
                 ]
+                
             },
             {
+                "isRight": true,
                 "soundGroups": [
                     {
-                        "name": "Main",
-                        "categoryClass": "interface-click-main",
+                        "name": "right",
                         "categories": [
                             {
-                                "iconClass": "interface-glass",
-                                "title": "Glass",
+                                "iconClass": "interface-click-main",
+                                "title": "Main",
                                 "subcategories": [
                                     {
-                                        "iconClass": "",
-                                        "title": "",
+                                        "iconClass": "interface-glass",
+                                        "title": "Glass",
                                         "sounds": [
                                             {
                                                 "title": "Glass_01"
