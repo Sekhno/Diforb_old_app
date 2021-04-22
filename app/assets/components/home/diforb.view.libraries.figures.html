@@ -11,7 +11,7 @@
 			<h2>{{value.title}}</h2>
 			<h4><span></span></h4>
 			<div class="dashboard--btn-play" ng-class="{'disable': value.audio === null}"></div>
-			<a href="/Diforb_old_app/#/library/{{::value.name | lowercase}}" class="dashboard--btn-launch" target="_blank" ng-if="!value.isComingSoon&amp;&amp;desktop&amp;&amp;!isSafaryBrowser">launch</a>
+			<a ng-href="/Diforb_old_app/#/library/{{::value.name | lowercase}}" class="dashboard--btn-launch" target="_blank" ng-if="!value.isComingSoon&amp;&amp;desktop&amp;&amp;!isSafaryBrowser">launch</a>
 			<a class="dashboard--btn-launch" ng-if="!value.isComingSoon&amp;&amp;!desktop&amp;&amp;!isSafaryBrowser">launch
 				<div class="tooltip-launch">Please use desktop.<br>The mobile is comming.</div>
 			</a>
